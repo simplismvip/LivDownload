@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0425D1F21E5FD74900F759B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D1F11E5FD74900F759B7 /* main.m */; };
+		0425D1F51E5FD74900F759B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D1F41E5FD74900F759B7 /* AppDelegate.m */; };
+		0425D1FB1E5FD74900F759B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0425D1F91E5FD74900F759B7 /* Main.storyboard */; };
+		0425D1FD1E5FD74900F759B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0425D1FC1E5FD74900F759B7 /* Assets.xcassets */; };
+		0425D2001E5FD74900F759B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0425D1FE1E5FD74900F759B7 /* LaunchScreen.storyboard */; };
+		0425D20B1E5FD74900F759B7 /* LivDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D20A1E5FD74900F759B7 /* LivDownloadTests.m */; };
+		0425D2541E5FD80000F759B7 /* UIImage+JMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2181E5FD80000F759B7 /* UIImage+JMImage.m */; };
+		0425D2551E5FD80000F759B7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D21A1E5FD80000F759B7 /* UIView+Extension.m */; };
+		0425D2561E5FD80000F759B7 /* DownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D21E1E5FD80000F759B7 /* DownloadController.m */; };
+		0425D2571E5FD80000F759B7 /* LivViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2201E5FD80000F759B7 /* LivViewController.m */; };
+		0425D2581E5FD80000F759B7 /* DownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2231E5FD80000F759B7 /* DownloadModel.m */; };
+		0425D2591E5FD80000F759B7 /* DownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2261E5FD80000F759B7 /* DownloadCell.m */; };
+		0425D25A1E5FD80000F759B7 /* DownloadCompleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2281E5FD80000F759B7 /* DownloadCompleteCell.m */; };
+		0425D25B1E5FD80000F759B7 /* SegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D22A1E5FD80000F759B7 /* SegmentControl.m */; };
+		0425D25C1E5FD80000F759B7 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D22E1E5FD80000F759B7 /* HomeController.m */; };
+		0425D25D1E5FD80000F759B7 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2341E5FD80000F759B7 /* AFHTTPSessionManager.m */; };
+		0425D25E1E5FD80000F759B7 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2371E5FD80000F759B7 /* AFNetworkReachabilityManager.m */; };
+		0425D25F1E5FD80000F759B7 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2391E5FD80000F759B7 /* AFSecurityPolicy.m */; };
+		0425D2601E5FD80000F759B7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D23B1E5FD80000F759B7 /* AFURLRequestSerialization.m */; };
+		0425D2611E5FD80000F759B7 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D23D1E5FD80000F759B7 /* AFURLResponseSerialization.m */; };
+		0425D2621E5FD80000F759B7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D23F1E5FD80000F759B7 /* AFURLSessionManager.m */; };
+		0425D2631E5FD80000F759B7 /* DownloadNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2431E5FD80000F759B7 /* DownloadNavController.m */; };
+		0425D2641E5FD80000F759B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2451E5FD80000F759B7 /* ViewController.m */; };
+		0425D2661E5FD80000F759B7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D24D1E5FD80000F759B7 /* MineViewController.m */; };
+		0425D2671E5FD80000F759B7 /* LivDownloadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2531E5FD80000F759B7 /* LivDownloadHelper.m */; };
+		0425D26A1E5FD90C00F759B7 /* DownloadTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2691E5FD90C00F759B7 /* DownloadTabbar.m */; };
+		0425D26D1E5FDA0700F759B7 /* NSObject+PYThemeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D26C1E5FDA0700F759B7 /* NSObject+PYThemeExtension.m */; };
+		0425D2701E5FECF600F759B7 /* AboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D26F1E5FECF600F759B7 /* AboutUsController.m */; };
+		0425D2731E5FED0800F759B7 /* MineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2721E5FED0800F759B7 /* MineModel.m */; };
+		0425D2761E5FED2000F759B7 /* MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2751E5FED2000F759B7 /* MineCell.m */; };
+		0425D2791E60283700F759B7 /* UIImage+MetaImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D2781E60283700F759B7 /* UIImage+MetaImage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0425D2071E5FD74900F759B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0425D1E51E5FD74900F759B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0425D1EC1E5FD74900F759B7;
+			remoteInfo = LivDownload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0425D1ED1E5FD74900F759B7 /* LivDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0425D1F11E5FD74900F759B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0425D1F31E5FD74900F759B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0425D1F41E5FD74900F759B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0425D1FA1E5FD74900F759B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0425D1FC1E5FD74900F759B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0425D1FF1E5FD74900F759B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0425D2011E5FD74900F759B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0425D2061E5FD74900F759B7 /* LivDownloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivDownloadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0425D20A1E5FD74900F759B7 /* LivDownloadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LivDownloadTests.m; sourceTree = "<group>"; };
+		0425D20C1E5FD74900F759B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0425D2171E5FD80000F759B7 /* UIImage+JMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JMImage.h"; sourceTree = "<group>"; };
+		0425D2181E5FD80000F759B7 /* UIImage+JMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JMImage.m"; sourceTree = "<group>"; };
+		0425D2191E5FD80000F759B7 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		0425D21A1E5FD80000F759B7 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		0425D21D1E5FD80000F759B7 /* DownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadController.h; sourceTree = "<group>"; };
+		0425D21E1E5FD80000F759B7 /* DownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadController.m; sourceTree = "<group>"; };
+		0425D21F1E5FD80000F759B7 /* LivViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivViewController.h; sourceTree = "<group>"; };
+		0425D2201E5FD80000F759B7 /* LivViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivViewController.m; sourceTree = "<group>"; };
+		0425D2221E5FD80000F759B7 /* DownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadModel.h; sourceTree = "<group>"; };
+		0425D2231E5FD80000F759B7 /* DownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadModel.m; sourceTree = "<group>"; };
+		0425D2251E5FD80000F759B7 /* DownloadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadCell.h; sourceTree = "<group>"; };
+		0425D2261E5FD80000F759B7 /* DownloadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadCell.m; sourceTree = "<group>"; };
+		0425D2271E5FD80000F759B7 /* DownloadCompleteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadCompleteCell.h; sourceTree = "<group>"; };
+		0425D2281E5FD80000F759B7 /* DownloadCompleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadCompleteCell.m; sourceTree = "<group>"; };
+		0425D2291E5FD80000F759B7 /* SegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentControl.h; sourceTree = "<group>"; };
+		0425D22A1E5FD80000F759B7 /* SegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentControl.m; sourceTree = "<group>"; };
+		0425D22D1E5FD80000F759B7 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		0425D22E1E5FD80000F759B7 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		0425D2331E5FD80000F759B7 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		0425D2341E5FD80000F759B7 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		0425D2351E5FD80000F759B7 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		0425D2361E5FD80000F759B7 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0425D2371E5FD80000F759B7 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0425D2381E5FD80000F759B7 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		0425D2391E5FD80000F759B7 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		0425D23A1E5FD80000F759B7 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		0425D23B1E5FD80000F759B7 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		0425D23C1E5FD80000F759B7 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		0425D23D1E5FD80000F759B7 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		0425D23E1E5FD80000F759B7 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		0425D23F1E5FD80000F759B7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		0425D2421E5FD80000F759B7 /* DownloadNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadNavController.h; sourceTree = "<group>"; };
+		0425D2431E5FD80000F759B7 /* DownloadNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadNavController.m; sourceTree = "<group>"; };
+		0425D2441E5FD80000F759B7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0425D2451E5FD80000F759B7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0425D24C1E5FD80000F759B7 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		0425D24D1E5FD80000F759B7 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		0425D2521E5FD80000F759B7 /* LivDownloadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivDownloadHelper.h; sourceTree = "<group>"; };
+		0425D2531E5FD80000F759B7 /* LivDownloadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivDownloadHelper.m; sourceTree = "<group>"; };
+		0425D2681E5FD90C00F759B7 /* DownloadTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTabbar.h; sourceTree = "<group>"; };
+		0425D2691E5FD90C00F759B7 /* DownloadTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTabbar.m; sourceTree = "<group>"; };
+		0425D26B1E5FDA0700F759B7 /* NSObject+PYThemeExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PYThemeExtension.h"; sourceTree = "<group>"; };
+		0425D26C1E5FDA0700F759B7 /* NSObject+PYThemeExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PYThemeExtension.m"; sourceTree = "<group>"; };
+		0425D26E1E5FECF600F759B7 /* AboutUsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsController.h; sourceTree = "<group>"; };
+		0425D26F1E5FECF600F759B7 /* AboutUsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsController.m; sourceTree = "<group>"; };
+		0425D2711E5FED0800F759B7 /* MineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModel.h; sourceTree = "<group>"; };
+		0425D2721E5FED0800F759B7 /* MineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModel.m; sourceTree = "<group>"; };
+		0425D2741E5FED2000F759B7 /* MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCell.h; sourceTree = "<group>"; };
+		0425D2751E5FED2000F759B7 /* MineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCell.m; sourceTree = "<group>"; };
+		0425D2771E60283700F759B7 /* UIImage+MetaImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MetaImage.h"; sourceTree = "<group>"; };
+		0425D2781E60283700F759B7 /* UIImage+MetaImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MetaImage.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0425D1EA1E5FD74900F759B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0425D2031E5FD74900F759B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0425D1E41E5FD74900F759B7 = {
+			isa = PBXGroup;
+			children = (
+				0425D1EF1E5FD74900F759B7 /* LivDownload */,
+				0425D2091E5FD74900F759B7 /* LivDownloadTests */,
+				0425D1EE1E5FD74900F759B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0425D1EE1E5FD74900F759B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0425D1ED1E5FD74900F759B7 /* LivDownload.app */,
+				0425D2061E5FD74900F759B7 /* LivDownloadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0425D1EF1E5FD74900F759B7 /* LivDownload */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2151E5FD80000F759B7 /* Class */,
+				0425D1F31E5FD74900F759B7 /* AppDelegate.h */,
+				0425D1F41E5FD74900F759B7 /* AppDelegate.m */,
+				0425D1F91E5FD74900F759B7 /* Main.storyboard */,
+				0425D1FC1E5FD74900F759B7 /* Assets.xcassets */,
+				0425D1FE1E5FD74900F759B7 /* LaunchScreen.storyboard */,
+				0425D2011E5FD74900F759B7 /* Info.plist */,
+				0425D1F01E5FD74900F759B7 /* Supporting Files */,
+			);
+			path = LivDownload;
+			sourceTree = "<group>";
+		};
+		0425D1F01E5FD74900F759B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0425D1F11E5FD74900F759B7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0425D2091E5FD74900F759B7 /* LivDownloadTests */ = {
+			isa = PBXGroup;
+			children = (
+				0425D20A1E5FD74900F759B7 /* LivDownloadTests.m */,
+				0425D20C1E5FD74900F759B7 /* Info.plist */,
+			);
+			path = LivDownloadTests;
+			sourceTree = "<group>";
+		};
+		0425D2151E5FD80000F759B7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2161E5FD80000F759B7 /* Category */,
+				0425D21B1E5FD80000F759B7 /* Download */,
+				0425D22B1E5FD80000F759B7 /* Home */,
+				0425D2311E5FD80000F759B7 /* Lib */,
+				0425D2401E5FD80000F759B7 /* Main */,
+				0425D24A1E5FD80000F759B7 /* Mine */,
+				0425D2501E5FD80000F759B7 /* Tools */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0425D2161E5FD80000F759B7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0425D26B1E5FDA0700F759B7 /* NSObject+PYThemeExtension.h */,
+				0425D26C1E5FDA0700F759B7 /* NSObject+PYThemeExtension.m */,
+				0425D2171E5FD80000F759B7 /* UIImage+JMImage.h */,
+				0425D2181E5FD80000F759B7 /* UIImage+JMImage.m */,
+				0425D2191E5FD80000F759B7 /* UIView+Extension.h */,
+				0425D21A1E5FD80000F759B7 /* UIView+Extension.m */,
+				0425D2771E60283700F759B7 /* UIImage+MetaImage.h */,
+				0425D2781E60283700F759B7 /* UIImage+MetaImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0425D21B1E5FD80000F759B7 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				0425D21C1E5FD80000F759B7 /* Controller */,
+				0425D2211E5FD80000F759B7 /* Model */,
+				0425D2241E5FD80000F759B7 /* View */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		0425D21C1E5FD80000F759B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0425D21D1E5FD80000F759B7 /* DownloadController.h */,
+				0425D21E1E5FD80000F759B7 /* DownloadController.m */,
+				0425D21F1E5FD80000F759B7 /* LivViewController.h */,
+				0425D2201E5FD80000F759B7 /* LivViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0425D2211E5FD80000F759B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2221E5FD80000F759B7 /* DownloadModel.h */,
+				0425D2231E5FD80000F759B7 /* DownloadModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0425D2241E5FD80000F759B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2251E5FD80000F759B7 /* DownloadCell.h */,
+				0425D2261E5FD80000F759B7 /* DownloadCell.m */,
+				0425D2271E5FD80000F759B7 /* DownloadCompleteCell.h */,
+				0425D2281E5FD80000F759B7 /* DownloadCompleteCell.m */,
+				0425D2291E5FD80000F759B7 /* SegmentControl.h */,
+				0425D22A1E5FD80000F759B7 /* SegmentControl.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0425D22B1E5FD80000F759B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0425D22C1E5FD80000F759B7 /* Controller */,
+				0425D22F1E5FD80000F759B7 /* Model */,
+				0425D2301E5FD80000F759B7 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0425D22C1E5FD80000F759B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0425D22D1E5FD80000F759B7 /* HomeController.h */,
+				0425D22E1E5FD80000F759B7 /* HomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0425D22F1E5FD80000F759B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0425D2301E5FD80000F759B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0425D2311E5FD80000F759B7 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2321E5FD80000F759B7 /* AFNetworking */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		0425D2321E5FD80000F759B7 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2331E5FD80000F759B7 /* AFHTTPSessionManager.h */,
+				0425D2341E5FD80000F759B7 /* AFHTTPSessionManager.m */,
+				0425D2351E5FD80000F759B7 /* AFNetworking.h */,
+				0425D2361E5FD80000F759B7 /* AFNetworkReachabilityManager.h */,
+				0425D2371E5FD80000F759B7 /* AFNetworkReachabilityManager.m */,
+				0425D2381E5FD80000F759B7 /* AFSecurityPolicy.h */,
+				0425D2391E5FD80000F759B7 /* AFSecurityPolicy.m */,
+				0425D23A1E5FD80000F759B7 /* AFURLRequestSerialization.h */,
+				0425D23B1E5FD80000F759B7 /* AFURLRequestSerialization.m */,
+				0425D23C1E5FD80000F759B7 /* AFURLResponseSerialization.h */,
+				0425D23D1E5FD80000F759B7 /* AFURLResponseSerialization.m */,
+				0425D23E1E5FD80000F759B7 /* AFURLSessionManager.h */,
+				0425D23F1E5FD80000F759B7 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		0425D2401E5FD80000F759B7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2411E5FD80000F759B7 /* Controller */,
+				0425D2461E5FD80000F759B7 /* Model */,
+				0425D2471E5FD80000F759B7 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0425D2411E5FD80000F759B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2421E5FD80000F759B7 /* DownloadNavController.h */,
+				0425D2431E5FD80000F759B7 /* DownloadNavController.m */,
+				0425D2441E5FD80000F759B7 /* ViewController.h */,
+				0425D2451E5FD80000F759B7 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0425D2461E5FD80000F759B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0425D2471E5FD80000F759B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2681E5FD90C00F759B7 /* DownloadTabbar.h */,
+				0425D2691E5FD90C00F759B7 /* DownloadTabbar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0425D24A1E5FD80000F759B7 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				0425D24B1E5FD80000F759B7 /* Controller */,
+				0425D24E1E5FD80000F759B7 /* Model */,
+				0425D24F1E5FD80000F759B7 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		0425D24B1E5FD80000F759B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0425D24C1E5FD80000F759B7 /* MineViewController.h */,
+				0425D24D1E5FD80000F759B7 /* MineViewController.m */,
+				0425D26E1E5FECF600F759B7 /* AboutUsController.h */,
+				0425D26F1E5FECF600F759B7 /* AboutUsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0425D24E1E5FD80000F759B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2711E5FED0800F759B7 /* MineModel.h */,
+				0425D2721E5FED0800F759B7 /* MineModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0425D24F1E5FD80000F759B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2741E5FED2000F759B7 /* MineCell.h */,
+				0425D2751E5FED2000F759B7 /* MineCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0425D2501E5FD80000F759B7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2511E5FD80000F759B7 /* Helper */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0425D2511E5FD80000F759B7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0425D2521E5FD80000F759B7 /* LivDownloadHelper.h */,
+				0425D2531E5FD80000F759B7 /* LivDownloadHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0425D1EC1E5FD74900F759B7 /* LivDownload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0425D20F1E5FD74900F759B7 /* Build configuration list for PBXNativeTarget "LivDownload" */;
+			buildPhases = (
+				0425D1E91E5FD74900F759B7 /* Sources */,
+				0425D1EA1E5FD74900F759B7 /* Frameworks */,
+				0425D1EB1E5FD74900F759B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LivDownload;
+			productName = LivDownload;
+			productReference = 0425D1ED1E5FD74900F759B7 /* LivDownload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0425D2051E5FD74900F759B7 /* LivDownloadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0425D2121E5FD74900F759B7 /* Build configuration list for PBXNativeTarget "LivDownloadTests" */;
+			buildPhases = (
+				0425D2021E5FD74900F759B7 /* Sources */,
+				0425D2031E5FD74900F759B7 /* Frameworks */,
+				0425D2041E5FD74900F759B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0425D2081E5FD74900F759B7 /* PBXTargetDependency */,
+			);
+			name = LivDownloadTests;
+			productName = LivDownloadTests;
+			productReference = 0425D2061E5FD74900F759B7 /* LivDownloadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0425D1E51E5FD74900F759B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = yijia;
+				TargetAttributes = {
+					0425D1EC1E5FD74900F759B7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5ATA948SQL;
+						ProvisioningStyle = Automatic;
+					};
+					0425D2051E5FD74900F759B7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5ATA948SQL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0425D1EC1E5FD74900F759B7;
+					};
+				};
+			};
+			buildConfigurationList = 0425D1E81E5FD74900F759B7 /* Build configuration list for PBXProject "LivDownload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0425D1E41E5FD74900F759B7;
+			productRefGroup = 0425D1EE1E5FD74900F759B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0425D1EC1E5FD74900F759B7 /* LivDownload */,
+				0425D2051E5FD74900F759B7 /* LivDownloadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0425D1EB1E5FD74900F759B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0425D2001E5FD74900F759B7 /* LaunchScreen.storyboard in Resources */,
+				0425D1FD1E5FD74900F759B7 /* Assets.xcassets in Resources */,
+				0425D1FB1E5FD74900F759B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0425D2041E5FD74900F759B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0425D1E91E5FD74900F759B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0425D2621E5FD80000F759B7 /* AFURLSessionManager.m in Sources */,
+				0425D25F1E5FD80000F759B7 /* AFSecurityPolicy.m in Sources */,
+				0425D2581E5FD80000F759B7 /* DownloadModel.m in Sources */,
+				0425D25E1E5FD80000F759B7 /* AFNetworkReachabilityManager.m in Sources */,
+				0425D2591E5FD80000F759B7 /* DownloadCell.m in Sources */,
+				0425D2701E5FECF600F759B7 /* AboutUsController.m in Sources */,
+				0425D2571E5FD80000F759B7 /* LivViewController.m in Sources */,
+				0425D25D1E5FD80000F759B7 /* AFHTTPSessionManager.m in Sources */,
+				0425D2731E5FED0800F759B7 /* MineModel.m in Sources */,
+				0425D25A1E5FD80000F759B7 /* DownloadCompleteCell.m in Sources */,
+				0425D2641E5FD80000F759B7 /* ViewController.m in Sources */,
+				0425D2541E5FD80000F759B7 /* UIImage+JMImage.m in Sources */,
+				0425D1F51E5FD74900F759B7 /* AppDelegate.m in Sources */,
+				0425D26A1E5FD90C00F759B7 /* DownloadTabbar.m in Sources */,
+				0425D2551E5FD80000F759B7 /* UIView+Extension.m in Sources */,
+				0425D1F21E5FD74900F759B7 /* main.m in Sources */,
+				0425D26D1E5FDA0700F759B7 /* NSObject+PYThemeExtension.m in Sources */,
+				0425D25C1E5FD80000F759B7 /* HomeController.m in Sources */,
+				0425D2661E5FD80000F759B7 /* MineViewController.m in Sources */,
+				0425D2631E5FD80000F759B7 /* DownloadNavController.m in Sources */,
+				0425D2761E5FED2000F759B7 /* MineCell.m in Sources */,
+				0425D2791E60283700F759B7 /* UIImage+MetaImage.m in Sources */,
+				0425D2601E5FD80000F759B7 /* AFURLRequestSerialization.m in Sources */,
+				0425D2561E5FD80000F759B7 /* DownloadController.m in Sources */,
+				0425D2671E5FD80000F759B7 /* LivDownloadHelper.m in Sources */,
+				0425D2611E5FD80000F759B7 /* AFURLResponseSerialization.m in Sources */,
+				0425D25B1E5FD80000F759B7 /* SegmentControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0425D2021E5FD74900F759B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0425D20B1E5FD74900F759B7 /* LivDownloadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0425D2081E5FD74900F759B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0425D1EC1E5FD74900F759B7 /* LivDownload */;
+			targetProxy = 0425D2071E5FD74900F759B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0425D1F91E5FD74900F759B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0425D1FA1E5FD74900F759B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0425D1FE1E5FD74900F759B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0425D1FF1E5FD74900F759B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0425D20D1E5FD74900F759B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0425D20E1E5FD74900F759B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0425D2101E5FD74900F759B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5ATA948SQL;
+				INFOPLIST_FILE = LivDownload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneplus.LivDownload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0425D2111E5FD74900F759B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5ATA948SQL;
+				INFOPLIST_FILE = LivDownload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneplus.LivDownload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0425D2131E5FD74900F759B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5ATA948SQL;
+				INFOPLIST_FILE = LivDownloadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneplus.LivDownloadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LivDownload.app/LivDownload";
+			};
+			name = Debug;
+		};
+		0425D2141E5FD74900F759B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5ATA948SQL;
+				INFOPLIST_FILE = LivDownloadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneplus.LivDownloadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LivDownload.app/LivDownload";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0425D1E81E5FD74900F759B7 /* Build configuration list for PBXProject "LivDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0425D20D1E5FD74900F759B7 /* Debug */,
+				0425D20E1E5FD74900F759B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0425D20F1E5FD74900F759B7 /* Build configuration list for PBXNativeTarget "LivDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0425D2101E5FD74900F759B7 /* Debug */,
+				0425D2111E5FD74900F759B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0425D2121E5FD74900F759B7 /* Build configuration list for PBXNativeTarget "LivDownloadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0425D2131E5FD74900F759B7 /* Debug */,
+				0425D2141E5FD74900F759B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0425D1E51E5FD74900F759B7 /* Project object */;
+}
