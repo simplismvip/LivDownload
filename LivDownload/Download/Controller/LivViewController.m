@@ -1,22 +1,33 @@
 //
-//  AboutUsController.m
+//  LivViewController.m
 //  LivDownload
 //
-//  Created by JM Zhao on 2017/2/24.
+//  Created by JM Zhao on 2017/2/22.
 //  Copyright © 2017年 yijia. All rights reserved.
 //
 
-#import "AboutUsController.h"
+#import "LivViewController.h"
+#import "DownloadModel.h"
 
-@interface AboutUsController ()
+@interface LivViewController ()
 
 @end
 
-@implementation AboutUsController
+@implementation LivViewController
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.view.backgroundColor = [UIColor whiteColor];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"Liv 文件阅读";
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *filePath = [path stringByAppendingPathComponent:self.model.name];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

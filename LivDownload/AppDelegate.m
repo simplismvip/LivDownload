@@ -21,12 +21,11 @@
     
     ViewController *table = [[ViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:table];
-    navigationController.navigationBar.tintColor = JMColor(26, 178, 10);
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
-    [self py_setThemeColor:JMColor(119, 195, 248)];
+    [self py_setThemeColor:JMColor(52, 118, 237)];
     
     return YES;
 }

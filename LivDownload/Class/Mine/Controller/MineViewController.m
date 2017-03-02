@@ -78,9 +78,9 @@
 - (void)getSetArray
 {
     NSArray *kSetArray = @[
-  @[@{@"title":@"个人信息", @"icon":@"mine_32"}, @{@"title":@"账户安全", @"icon":@"safe"}],
-  @[@{@"title":@"高级设置", @"icon":@"advice"}, @{@"title":@"勿扰模式", @"icon":@"more"}, @{@"title":@"夜晚模式", @"icon":@"night"}],
-  @[@{@"title":@"清除缓存", @"icon":@"cache"}, @{@"title":@"联系我们", @"icon":@"aboutus"}, @{@"title":@"退出登录", @"icon":@"logout_32"}]
+//  @[@{@"title":@"个人信息", @"icon":@"mine_32"}, @{@"title":@"账户安全", @"icon":@"safe"}],
+//  @[@{@"title":@"高级设置", @"icon":@"advice"}, @{@"title":@"勿扰模式", @"icon":@"more"}, @{@"title":@"夜晚模式", @"icon":@"night"}],
+//  @[@{@"title":@"清除缓存", @"icon":@"cache"}, @{@"title":@"联系我们", @"icon":@"aboutus"}, @{@"title":@"退出登录", @"icon":@"logout_32"}]
   ];
     
     for (NSArray *arr in kSetArray) {

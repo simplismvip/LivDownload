@@ -17,29 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIImage *image = [UIImage imageWithContentsOfFile:@"/Users/mac/Desktop/14577546764Screenshot_2014-11-13-12-16-454.jpg.png"];
-    [image getPNGimageInfo];
-    NSLog(@"%@", [image getPNGimageInfo]);
-    
-    NSLog(@"%@", NSStringFromCGSize(image.size));
-    
-    UIImage *ima = [image creatThumbnailFromImageSource:500];
-    NSLog(@"%@", NSStringFromCGSize(ima.size));
-    
-    UIImageView *imag = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 100, 100)];
-    UIImageView *imag1 = [[UIImageView alloc] initWithFrame:CGRectMake(200, 100, 100, 100)];
-    [self.view addSubview:imag];
-    [self.view addSubview:imag1];
-
-    imag.image = image;
-    imag1.image = ima;
-    
-//    UIImage *imagew = [UIImage getImageFromWindow];
-    NSData *data = UIImagePNGRepresentation(ima);
-    [data writeToFile:@"/Users/mac/Desktop/2014-11-13-12-16-454.png" atomically:YES];
-    
-    
+      
 }
 
 - (void)didReceiveMemoryWarning {

@@ -36,46 +36,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationBar.translucent = YES;
-    self.navigationBar.barTintColor = JMColor(0, 0.5, 1);
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
-    self.navigationBar.tintColor = [UIColor colorWithWhite:1.f alpha:0.5];
-    self.delegate = self;
-    
 }
 
-+ (void)setupNavTheme
-{
-    NSDictionary *textAttr = @{NSFontAttributeName:[UIFont systemFontOfSize:16.0]};
-    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[self.class]] setTitleTextAttributes:textAttr forState:UIControlStateNormal];
-    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[self.class]] setTintColor:JMColor(90, 200, 93)];
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-}
-
-//- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-//{
-//    [super pushViewController:viewController animated:animated];
-//
-//
-//}
-
-//- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-//{
-//
-//}
-
-//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-//{
-//    if ([viewController.class isSubclassOfClass:NSClassFromString(@"JMBaseViewController")] && ![viewController isKindOfClass:NSClassFromString(@"JMChatViewController")]) {
-//
-//        viewController.tabBarController.tabBar.hidden = NO;
-//
-//    }else{
-//        viewController.tabBarController.tabBar.hidden = YES;
-//    }
-//
-//    JMLog(@"%@", viewController);
-//}
 
 - (BOOL)prefersStatusBarHidden
 {

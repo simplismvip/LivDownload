@@ -26,7 +26,6 @@
 @implementation ViewController
 
 // 测试push
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
@@ -61,7 +60,7 @@
     [self setupChildViewController:homeVC
                              image:[UIImage imageWithRenderingName:@"tabbar_mainframe"]
                           selImage:[[UIImage imageNamed:@"tabbar_mainframeHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
-                             title:@"我的Liv"
+                             title:@"Liv文件"
                                tag:baseTag+0];
     
     // 下载
@@ -79,7 +78,7 @@
     [self setupChildViewController:mineVC
                              image:[UIImage imageWithRenderingName:@"tabbar_me"]
                           selImage:[[UIImage imageNamed:@"tabbar_meHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
-                             title:@"我的设置"
+                             title:@"设置"
                                tag:baseTag+3];
 }
 
