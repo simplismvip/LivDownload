@@ -90,8 +90,12 @@
     if (!_isLeft) {
         
         DownloadModel *model = self.downloadArray[indexPath.row];
-        LivViewController *liv = [[LivViewController alloc] init];
-        liv.model = model;
+        NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+        NSString *filePath = [path stringByAppendingPathComponent:model.name];
+        LivePlaybackViewController *liv =[[LivePlaybackViewController alloc] initWithLiveFilePath:filePath];
+        
+//        LivViewController *liv = [[LivViewController alloc] init];
+//        liv.model = model;
         [self.tabBarController.navigationController pushViewController:liv animated:YES];
     }
 }
