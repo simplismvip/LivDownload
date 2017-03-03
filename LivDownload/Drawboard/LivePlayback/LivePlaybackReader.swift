@@ -19,6 +19,9 @@ class LivePlaybackReader : NSObject {
     //是否开启自动回放所有页模式
     var exitAutoModel = false
     
+    override init() {
+        super.init()
+    }
     
     init(_ filePath: String, isRemote: Bool) {
         super.init()

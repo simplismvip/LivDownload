@@ -15,7 +15,7 @@ struct  Sicon : Glossy{
     let y2:Double
     let width: Float
     let height: Float
-    let icon:String
+    let icon:String?
     let rid:Int
     
     init?(json: JSON) {
@@ -27,7 +27,7 @@ struct  Sicon : Glossy{
         self.width = ("width" <~~ json)!
         self.height = ("height" <~~ json)!
         self.rid = ("rid" <~~ json)!
-        self.icon = ("icon" <~~ json)!
+        self.icon = "icon" <~~ json
     }
     
     func toJSON() -> JSON? {

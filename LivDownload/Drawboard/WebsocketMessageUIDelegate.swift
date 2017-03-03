@@ -232,6 +232,9 @@ class WebsocketMessageUIDelegate: NSObject,OPAudioMangerToolDelegate {
         if audioTool == nil {
             audioTool=OPAudioMangerTool()
             audioTool?.delegate=self
+        }
+        
+        if urlAudioArray == nil {
             urlAudioArray=[]
         }
         
