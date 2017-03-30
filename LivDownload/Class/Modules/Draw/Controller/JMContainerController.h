@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface JMContainerController : UIViewController
-
+@property (nonatomic, strong) NSMutableArray *controllers;
 @end

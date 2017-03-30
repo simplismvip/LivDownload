@@ -109,6 +109,13 @@
 		04360F091E8CBA1900C40166 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360EF71E8CBA1900C40166 /* UIImageView+HighlightedWebCache.m */; };
 		04360F0A1E8CBA1900C40166 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360EF91E8CBA1900C40166 /* UIImageView+WebCache.m */; };
 		04360F0B1E8CBA1900C40166 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360EFB1E8CBA1900C40166 /* UIView+WebCacheOperation.m */; };
+		04360F121E8CBB9200C40166 /* ClassCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F0D1E8CBB9200C40166 /* ClassCollectionReusableView.m */; };
+		04360F131E8CBB9200C40166 /* ClassCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F0F1E8CBB9200C40166 /* ClassCollectionViewFlowLayout.m */; };
+		04360F141E8CBB9200C40166 /* ClassListCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F111E8CBB9200C40166 /* ClassListCollectionCell.m */; };
+		04360F171E8CBBA000C40166 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F161E8CBBA000C40166 /* ClassModel.m */; };
+		04360F1A1E8CBBAF00C40166 /* NSObject+JMProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F191E8CBBAF00C40166 /* NSObject+JMProperty.m */; };
+		04360F1D1E8CBBD700C40166 /* JMSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F1C1E8CBBD700C40166 /* JMSegmentBar.m */; };
+		04B6C3FC1E8CBCC00073C215 /* ClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C3FB1E8CBCC00073C215 /* ClassController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -304,6 +311,20 @@
 		04360EF91E8CBA1900C40166 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		04360EFA1E8CBA1900C40166 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		04360EFB1E8CBA1900C40166 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		04360F0C1E8CBB9200C40166 /* ClassCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassCollectionReusableView.h; sourceTree = "<group>"; };
+		04360F0D1E8CBB9200C40166 /* ClassCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassCollectionReusableView.m; sourceTree = "<group>"; };
+		04360F0E1E8CBB9200C40166 /* ClassCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		04360F0F1E8CBB9200C40166 /* ClassCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		04360F101E8CBB9200C40166 /* ClassListCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassListCollectionCell.h; sourceTree = "<group>"; };
+		04360F111E8CBB9200C40166 /* ClassListCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassListCollectionCell.m; sourceTree = "<group>"; };
+		04360F151E8CBBA000C40166 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
+		04360F161E8CBBA000C40166 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
+		04360F181E8CBBAF00C40166 /* NSObject+JMProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JMProperty.h"; sourceTree = "<group>"; };
+		04360F191E8CBBAF00C40166 /* NSObject+JMProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JMProperty.m"; sourceTree = "<group>"; };
+		04360F1B1E8CBBD700C40166 /* JMSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSegmentBar.h; sourceTree = "<group>"; };
+		04360F1C1E8CBBD700C40166 /* JMSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSegmentBar.m; sourceTree = "<group>"; };
+		04B6C3FA1E8CBCC00073C215 /* ClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassController.h; sourceTree = "<group>"; };
+		04B6C3FB1E8CBCC00073C215 /* ClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassController.m; sourceTree = "<group>"; };
 		F56EE7321E66BE8800C2FE3F /* LivDownload-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LivDownload-Bridging-Header.h"; sourceTree = "<group>"; };
 		F56EE9161E66D60200C2FE3F /* LivDownload.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivDownload.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -393,6 +414,8 @@
 		04360DA31E8CB1BD00C40166 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				04360F181E8CBBAF00C40166 /* NSObject+JMProperty.h */,
+				04360F191E8CBBAF00C40166 /* NSObject+JMProperty.m */,
 				04360ECE1E8CB9DF00C40166 /* UINavigationBar+JMNavigationBar.h */,
 				04360ECF1E8CB9DF00C40166 /* UINavigationBar+JMNavigationBar.m */,
 				04360ED01E8CB9DF00C40166 /* UIAlertController+JMAlertController.h */,
@@ -634,10 +657,10 @@
 		04360E6B1E8CB4D400C40166 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				04360E6C1E8CB4D400C40166 /* Download */,
-				04360E7C1E8CB4D400C40166 /* Draw */,
-				04360E971E8CB4D400C40166 /* Home */,
 				04360E9B1E8CB4D400C40166 /* Main */,
+				04360E971E8CB4D400C40166 /* Home */,
+				04360E7C1E8CB4D400C40166 /* Draw */,
+				04360E6C1E8CB4D400C40166 /* Download */,
 				04360EA41E8CB4D400C40166 /* Mine */,
 			);
 			path = Modules;
@@ -699,6 +722,8 @@
 		04360E821E8CB4D400C40166 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04B6C3FA1E8CBCC00073C215 /* ClassController.h */,
+				04B6C3FB1E8CBCC00073C215 /* ClassController.m */,
 				04360E851E8CB4D400C40166 /* JMDrawController.h */,
 				04360E861E8CB4D400C40166 /* JMDrawController.m */,
 				04360ECB1E8CB91300C40166 /* JMContainerController.h */,
@@ -796,6 +821,8 @@
 		04360EC61E8CB6F500C40166 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04360F151E8CBBA000C40166 /* ClassModel.h */,
+				04360F161E8CBBA000C40166 /* ClassModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -803,6 +830,14 @@
 		04360EC71E8CB6F500C40166 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04360F1B1E8CBBD700C40166 /* JMSegmentBar.h */,
+				04360F1C1E8CBBD700C40166 /* JMSegmentBar.m */,
+				04360F0C1E8CBB9200C40166 /* ClassCollectionReusableView.h */,
+				04360F0D1E8CBB9200C40166 /* ClassCollectionReusableView.m */,
+				04360F0E1E8CBB9200C40166 /* ClassCollectionViewFlowLayout.h */,
+				04360F0F1E8CBB9200C40166 /* ClassCollectionViewFlowLayout.m */,
+				04360F101E8CBB9200C40166 /* ClassListCollectionCell.h */,
+				04360F111E8CBB9200C40166 /* ClassListCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -984,6 +1019,7 @@
 				04360EC01E8CB4D400C40166 /* DownloadNavController.m in Sources */,
 				04360E6A1E8CB3F100C40166 /* PageShareBridgingUtils.m in Sources */,
 				04360E451E8CB1D000C40166 /* ExtensionArray.swift in Sources */,
+				04360F141E8CBB9200C40166 /* ClassListCollectionCell.m in Sources */,
 				04360EBF1E8CB4D400C40166 /* HomeController.m in Sources */,
 				04360E561E8CB1D000C40166 /* DIYButton.m in Sources */,
 				04360E491E8CB1D000C40166 /* Operators.swift in Sources */,
@@ -1010,7 +1046,11 @@
 				04360F081E8CBA1900C40166 /* UIImage+WebP.m in Sources */,
 				04360DE31E8CB1C600C40166 /* PageProperty.swift in Sources */,
 				04360ED21E8CB9DF00C40166 /* UINavigationBar+JMNavigationBar.m in Sources */,
+				04360F1A1E8CBBAF00C40166 /* NSObject+JMProperty.m in Sources */,
 				04360F051E8CBA1900C40166 /* UIButton+WebCache.m in Sources */,
+				04360F1D1E8CBBD700C40166 /* JMSegmentBar.m in Sources */,
+				04360F131E8CBB9200C40166 /* ClassCollectionViewFlowLayout.m in Sources */,
+				04360F171E8CBBA000C40166 /* ClassModel.m in Sources */,
 				04360E3B1E8CB1D000C40166 /* AFHTTPSessionManager.m in Sources */,
 				04360E431E8CB1D000C40166 /* Decoder.swift in Sources */,
 				04360F061E8CBA1900C40166 /* UIImage+GIF.m in Sources */,
@@ -1034,6 +1074,7 @@
 				04360F071E8CBA1900C40166 /* UIImage+MultiFormat.m in Sources */,
 				04360DAD1E8CB1BD00C40166 /* UIImage+JMImage.m in Sources */,
 				04360F091E8CBA1900C40166 /* UIImageView+HighlightedWebCache.m in Sources */,
+				04B6C3FC1E8CBCC00073C215 /* ClassController.m in Sources */,
 				04360EFC1E8CBA1900C40166 /* MKAnnotationView+WebCache.m in Sources */,
 				04360E4C1E8CB1D000C40166 /* MASConstraintMaker.m in Sources */,
 				04360E5A1E8CB1D000C40166 /* Slider.m in Sources */,
@@ -1044,6 +1085,7 @@
 				04360DF21E8CB1C600C40166 /* WebsocketMessageUIDelegate.swift in Sources */,
 				04360E501E8CB1D000C40166 /* NSArray+MASAdditions.m in Sources */,
 				04360ECD1E8CB91300C40166 /* JMContainerController.m in Sources */,
+				04360F121E8CBB9200C40166 /* ClassCollectionReusableView.m in Sources */,
 				04360EFF1E8CBA1900C40166 /* SDWebImageCompat.m in Sources */,
 				04360E521E8CB1D000C40166 /* View+MASAdditions.m in Sources */,
 				04360DEF1E8CB1C600C40166 /* PageView.swift in Sources */,
