@@ -35,7 +35,12 @@
         [self addSubview:scrollView];
         self.scrollView = scrollView;
         
-        [self.scrollView addSubview:self.IineView];
+        UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, self.height, self.width, 1)];
+        backView.backgroundColor = JMColor(227, 227, 227);
+        [self addSubview:backView];
+        
+        [backView addSubview:self.IineView];
+        
     }
     return self;
 }
@@ -48,7 +53,6 @@
         
         UIViewController *vc = _items[i];
         UIButton *button = [UIButton buttonWithType:(UIButtonTypeSystem)];
-//        button.backgroundColor = JMColor(234, 234, 234);
         button.tag = baseTag+i;
         [button setTitle:vc.title forState:(UIControlStateNormal)];
         [button addTarget:self action:@selector(senmentControllerAction:) forControlEvents:(UIControlEventTouchUpInside)];
@@ -111,16 +115,16 @@
     
     NSInteger count = self.btnArray.count;
     CGFloat width = (self.width-(count+1)*kadge)/count;
-    CGFloat height = self.height - 3;
+    CGFloat height = self.height;
     
     for (int i = 0; i < count; i ++) {
         
         UIButton *btn = self.btnArray[i];
-        btn.frame = CGRectMake(kadge+(width+kadge)*i, 0, width, height);
+        btn.frame = CGRectMake(kadge+(width+kadge)*i, 0, width, height-1);
     }
     
     _scrollView.frame = self.bounds;
-    _IineView.frame = CGRectMake(kadge, height, width, 2);
+    _IineView.frame = CGRectMake(kadge, -1, width, 2);
 }
 
 - (NSMutableArray *)btnArray
@@ -140,13 +144,4 @@
     
     return _IineView;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
 @end

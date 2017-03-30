@@ -115,7 +115,12 @@
 		04360F171E8CBBA000C40166 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F161E8CBBA000C40166 /* ClassModel.m */; };
 		04360F1A1E8CBBAF00C40166 /* NSObject+JMProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F191E8CBBAF00C40166 /* NSObject+JMProperty.m */; };
 		04360F1D1E8CBBD700C40166 /* JMSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360F1C1E8CBBD700C40166 /* JMSegmentBar.m */; };
-		04B6C3FC1E8CBCC00073C215 /* ClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C3FB1E8CBCC00073C215 /* ClassController.m */; };
+		04B6C3FF1E8CC39C0073C215 /* JMGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C3FE1E8CC39C0073C215 /* JMGridController.m */; };
+		04B6C4061E8CCFE90073C215 /* JMBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4011E8CCFE90073C215 /* JMBottomCell.m */; };
+		04B6C4071E8CCFE90073C215 /* JMBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4031E8CCFE90073C215 /* JMBottomView.m */; };
+		04B6C4081E8CCFE90073C215 /* JMTopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4051E8CCFE90073C215 /* JMTopTableView.m */; };
+		04B6C40D1E8CCFF60073C215 /* JMBottomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C40A1E8CCFF60073C215 /* JMBottomModel.m */; };
+		04B6C40E1E8CCFF60073C215 /* JMTopBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C40C1E8CCFF60073C215 /* JMTopBarModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,8 +328,18 @@
 		04360F191E8CBBAF00C40166 /* NSObject+JMProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JMProperty.m"; sourceTree = "<group>"; };
 		04360F1B1E8CBBD700C40166 /* JMSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSegmentBar.h; sourceTree = "<group>"; };
 		04360F1C1E8CBBD700C40166 /* JMSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSegmentBar.m; sourceTree = "<group>"; };
-		04B6C3FA1E8CBCC00073C215 /* ClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassController.h; sourceTree = "<group>"; };
-		04B6C3FB1E8CBCC00073C215 /* ClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassController.m; sourceTree = "<group>"; };
+		04B6C3FD1E8CC39C0073C215 /* JMGridController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGridController.h; sourceTree = "<group>"; };
+		04B6C3FE1E8CC39C0073C215 /* JMGridController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGridController.m; sourceTree = "<group>"; };
+		04B6C4001E8CCFE90073C215 /* JMBottomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBottomCell.h; sourceTree = "<group>"; };
+		04B6C4011E8CCFE90073C215 /* JMBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBottomCell.m; sourceTree = "<group>"; };
+		04B6C4021E8CCFE90073C215 /* JMBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBottomView.h; sourceTree = "<group>"; };
+		04B6C4031E8CCFE90073C215 /* JMBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBottomView.m; sourceTree = "<group>"; };
+		04B6C4041E8CCFE90073C215 /* JMTopTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTopTableView.h; sourceTree = "<group>"; };
+		04B6C4051E8CCFE90073C215 /* JMTopTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTopTableView.m; sourceTree = "<group>"; };
+		04B6C4091E8CCFF60073C215 /* JMBottomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBottomModel.h; sourceTree = "<group>"; };
+		04B6C40A1E8CCFF60073C215 /* JMBottomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBottomModel.m; sourceTree = "<group>"; };
+		04B6C40B1E8CCFF60073C215 /* JMTopBarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTopBarModel.h; sourceTree = "<group>"; };
+		04B6C40C1E8CCFF60073C215 /* JMTopBarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTopBarModel.m; sourceTree = "<group>"; };
 		F56EE7321E66BE8800C2FE3F /* LivDownload-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LivDownload-Bridging-Header.h"; sourceTree = "<group>"; };
 		F56EE9161E66D60200C2FE3F /* LivDownload.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivDownload.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -722,12 +737,12 @@
 		04360E821E8CB4D400C40166 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04B6C3FA1E8CBCC00073C215 /* ClassController.h */,
-				04B6C3FB1E8CBCC00073C215 /* ClassController.m */,
 				04360E851E8CB4D400C40166 /* JMDrawController.h */,
 				04360E861E8CB4D400C40166 /* JMDrawController.m */,
 				04360ECB1E8CB91300C40166 /* JMContainerController.h */,
 				04360ECC1E8CB91300C40166 /* JMContainerController.m */,
+				04B6C3FD1E8CC39C0073C215 /* JMGridController.h */,
+				04B6C3FE1E8CC39C0073C215 /* JMGridController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -821,6 +836,10 @@
 		04360EC61E8CB6F500C40166 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04B6C4091E8CCFF60073C215 /* JMBottomModel.h */,
+				04B6C40A1E8CCFF60073C215 /* JMBottomModel.m */,
+				04B6C40B1E8CCFF60073C215 /* JMTopBarModel.h */,
+				04B6C40C1E8CCFF60073C215 /* JMTopBarModel.m */,
 				04360F151E8CBBA000C40166 /* ClassModel.h */,
 				04360F161E8CBBA000C40166 /* ClassModel.m */,
 			);
@@ -830,6 +849,12 @@
 		04360EC71E8CB6F500C40166 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04B6C4001E8CCFE90073C215 /* JMBottomCell.h */,
+				04B6C4011E8CCFE90073C215 /* JMBottomCell.m */,
+				04B6C4021E8CCFE90073C215 /* JMBottomView.h */,
+				04B6C4031E8CCFE90073C215 /* JMBottomView.m */,
+				04B6C4041E8CCFE90073C215 /* JMTopTableView.h */,
+				04B6C4051E8CCFE90073C215 /* JMTopTableView.m */,
 				04360F1B1E8CBBD700C40166 /* JMSegmentBar.h */,
 				04360F1C1E8CBBD700C40166 /* JMSegmentBar.m */,
 				04360F0C1E8CBB9200C40166 /* ClassCollectionReusableView.h */,
@@ -1024,12 +1049,14 @@
 				04360E561E8CB1D000C40166 /* DIYButton.m in Sources */,
 				04360E491E8CB1D000C40166 /* Operators.swift in Sources */,
 				04360E441E8CB1D000C40166 /* Encoder.swift in Sources */,
+				04B6C40D1E8CCFF60073C215 /* JMBottomModel.m in Sources */,
 				04360DEC1E8CB1C600C40166 /* LivePlaybackDelegate.swift in Sources */,
 				04360ED81E8CB9FB00C40166 /* JMGestureButton.m in Sources */,
 				04360EC31E8CB4D400C40166 /* MineViewController.m in Sources */,
 				04360E671E8CB1D800C40166 /* UIUtils.swift in Sources */,
 				04360EC21E8CB4D400C40166 /* DownloadTabbar.m in Sources */,
 				04360E3F1E8CB1D000C40166 /* AFURLResponseSerialization.m in Sources */,
+				04B6C4081E8CCFE90073C215 /* JMTopTableView.m in Sources */,
 				04360DEE1E8CB1C600C40166 /* LivePlaybackViewController.swift in Sources */,
 				04360EFD1E8CBA1900C40166 /* NSData+ImageContentType.m in Sources */,
 				04360EB01E8CB4D400C40166 /* DownloadModel.m in Sources */,
@@ -1074,7 +1101,6 @@
 				04360F071E8CBA1900C40166 /* UIImage+MultiFormat.m in Sources */,
 				04360DAD1E8CB1BD00C40166 /* UIImage+JMImage.m in Sources */,
 				04360F091E8CBA1900C40166 /* UIImageView+HighlightedWebCache.m in Sources */,
-				04B6C3FC1E8CBCC00073C215 /* ClassController.m in Sources */,
 				04360EFC1E8CBA1900C40166 /* MKAnnotationView+WebCache.m in Sources */,
 				04360E4C1E8CB1D000C40166 /* MASConstraintMaker.m in Sources */,
 				04360E5A1E8CB1D000C40166 /* Slider.m in Sources */,
@@ -1095,6 +1121,7 @@
 				04360DE21E8CB1C600C40166 /* SiconExt.swift in Sources */,
 				04360E471E8CB1D000C40166 /* Gloss.swift in Sources */,
 				04360DAC1E8CB1BD00C40166 /* NSObject+PYThemeExtension.m in Sources */,
+				04B6C4061E8CCFE90073C215 /* JMBottomCell.m in Sources */,
 				04360DE11E8CB1C600C40166 /* Sicon.swift in Sources */,
 				04360E461E8CB1D000C40166 /* ExtensionDictionary.swift in Sources */,
 				04360DE71E8CB1C600C40166 /* Properties.swift in Sources */,
@@ -1105,6 +1132,7 @@
 				04360E401E8CB1D000C40166 /* AFURLSessionManager.m in Sources */,
 				04360DE51E8CB1C600C40166 /* Point.swift in Sources */,
 				04360F041E8CBA1900C40166 /* SDWebImagePrefetcher.m in Sources */,
+				04B6C40E1E8CCFF60073C215 /* JMTopBarModel.m in Sources */,
 				04360F011E8CBA1900C40166 /* SDWebImageDownloader.m in Sources */,
 				04360DED1E8CB1C600C40166 /* LivePlaybackReader.swift in Sources */,
 				04360E541E8CB1D000C40166 /* AnnotationLayerDelegate.m in Sources */,
@@ -1112,6 +1140,8 @@
 				04360E4D1E8CB1D000C40166 /* MASLayoutConstraint.m in Sources */,
 				04360E411E8CB1D000C40166 /* OPAudioMangerTool.m in Sources */,
 				04360DE01E8CB1C600C40166 /* Icon.swift in Sources */,
+				04B6C3FF1E8CC39C0073C215 /* JMGridController.m in Sources */,
+				04B6C4071E8CCFE90073C215 /* JMBottomView.m in Sources */,
 				04360EB11E8CB4D400C40166 /* DownloadCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

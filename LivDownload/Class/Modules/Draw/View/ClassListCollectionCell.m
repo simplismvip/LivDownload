@@ -109,9 +109,9 @@
 {
     _model = model;
     [_classImage sd_setImageWithURL:[NSURL URLWithString:model.classImage] placeholderImage:[UIImage imageNamed:model.classImage]];
-    _className.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"net.pictoshare.pageshare.classviewcontroller.classMember.text", ""), model.className];
+    _className.text = [NSString stringWithFormat:@"%@", model.className];
     _classTime.text = model.classTime;
-    _memberCount.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"net.pictoshare.pageshare.classviewcontroller.classCount.text", ""), model.classCount];
+    _memberCount.text = [NSString stringWithFormat:@"%@", model.classCount];
 }
 
 @end

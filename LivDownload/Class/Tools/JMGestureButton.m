@@ -32,7 +32,6 @@
         } completion:^(BOOL finished) {
             
             [sender removeFromSuperview];
-//            sender.hidden = YES;
             if ([self.delegate respondsToSelector:@selector(didRemove)]) {[self.delegate didRemove];}
         }];
     }

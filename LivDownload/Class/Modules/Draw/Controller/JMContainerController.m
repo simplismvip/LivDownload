@@ -8,7 +8,7 @@
 
 #import "JMContainerController.h"
 #import "JMSegmentBar.h"
-#import "ClassController.h"
+#import "JMGridController.h"
 #import "UIView+Extension.h"
 #import "NSObject+JMProperty.h"
 #import "UINavigationBar+JMNavigationBar.h"
@@ -43,7 +43,7 @@
 
 - (NSDictionary *)getDic:(NSString *)name image:(NSString *)classImage count:(NSString *)count classMembers:(NSString *)classMembers
 {
-    NSString *tesacher = @"OP";
+    NSString *tesacher = @"讲师: OP";
     return @{@"classImage":classImage, @"className":name, @"classTime":tesacher, @"classCount":count, @"classMembers":classMembers};
 }
 
@@ -56,7 +56,7 @@
 
 - (void)switchAction:(UIBarButtonItem *)rightItem
 {
-    ClassController *vc = self.controllers[self.segmentBar.selectIndex];
+    JMGridController *vc = self.controllers[self.segmentBar.selectIndex];
     [vc switchGrid];
     [self setBarItem:vc.key];
 }
@@ -64,17 +64,31 @@
 #pragma mark -- 创建子View
 - (void)creatSubviews:(NSInteger)selecIndex
 {
+    NSMutableArray *models = [NSMutableArray array];
+    for (int i = 0; i < 7; i ++) {
+        
+        NSString *image = @"http://img.taopic.com/uploads/allimg/110728/6310-110HQ1491019.jpg";
+        NSDictionary *dic = [self getDic:[NSString stringWithFormat:@"课堂 :%d", i] image:image count:[NSString stringWithFormat:@"人数 :%d", i] classMembers:@"none"];
+        [models addObject:[ClassModel objectWithDictionary:dic]];
+    }
+    
     // 创建控制器
-    ClassController *class1 = [[ClassController alloc] init];
-    class1.dataSource = [NSMutableArray array];
-    class1.title = @"我的文档";
+    JMGridController *class1 = [[JMGridController alloc] init];
+    class1.dataSource = models;
+    class1.title = @"文档";
     class1.key = @"pub";
     
-    ClassController *class2 = [[ClassController alloc] init];
-    class2.title = @"我的回放";
+    JMGridController *class2 = [[JMGridController alloc] init];
+    class2.title = @"回放";
     class2.key = @"pra";
-    class2.dataSource = [NSMutableArray array];
-    self.controllers = [NSMutableArray arrayWithArray:@[class1, class2]];
+    class2.dataSource = models;
+    
+    JMGridController *class3 = [[JMGridController alloc] init];
+    class3.title = @"课程";
+    class3.key = @"pra";
+    class3.dataSource = models;
+    
+    self.controllers = [NSMutableArray arrayWithArray:@[class1, class2, class3]];
     
     UIScrollView *scroView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 94, self.view.width, self.view.height-94)];
     scroView.delegate = self;
@@ -105,13 +119,13 @@
 #pragma mark -- 切换控制机器
 - (void)changeController:(NSInteger)index
 {
-    for (ClassController *controller in self.controllers) {
+    for (JMGridController *controller in self.controllers) {
         
         [controller removeFromParentViewController];
         [controller.view removeFromSuperview];
     }
     
-    ClassController *vc = self.controllers[index];
+    JMGridController *vc = self.controllers[index];
     vc.view.frame = CGRectMake((index)*CGRectGetWidth(self.scroView.frame), 0, CGRectGetWidth(self.scroView.frame), CGRectGetHeight(self.scroView.frame));
     
     [vc willMoveToParentViewController:self];
@@ -125,7 +139,7 @@
     // 上一个
     if (index + 1 < self.controllers.count) {
         
-        ClassController *nextController = self.controllers[index + 1];
+        JMGridController *nextController = self.controllers[index + 1];
         UIView *nextView = nextController.view;
         [nextView removeFromSuperview];
         nextView.frame = CGRectMake((index + 1) * CGRectGetWidth(self.scroView.frame), 0, CGRectGetWidth(self.scroView.frame), CGRectGetHeight(self.scroView.frame));
@@ -135,7 +149,7 @@
     // 下一个
     if (index - 1 >= 0) {
         
-        ClassController *previousController = self.controllers[index - 1];
+        JMGridController *previousController = self.controllers[index - 1];
         UIView *previousView = previousController.view;
         [previousView removeFromSuperview];
         [self.scroView addSubview:previousView];

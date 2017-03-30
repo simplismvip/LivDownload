@@ -206,10 +206,12 @@
         
         if (self.rightTableView) {[self.rightTableView removeFromSuperview];}
         
-        UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:(UITableViewStylePlain)];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:(UITableViewStyleGrouped)];
         [tableView registerClass:[DownloadCell class] forCellReuseIdentifier:@"downloadCell"];
         tableView.delegate = self;
         tableView.dataSource = self;
+        tableView.sectionHeaderHeight = 0;
+        tableView.sectionFooterHeight = 0;
         tableView.separatorColor = JMColor(215, 215, 221);
         tableView.showsVerticalScrollIndicator = NO;
         tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -221,10 +223,12 @@
         
         if (self.leftTableView) {[self.leftTableView removeFromSuperview];}
         
-        UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:(UITableViewStylePlain)];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:(UITableViewStyleGrouped)];
         [tableView registerClass:[DownloadCompleteCell class] forCellReuseIdentifier:@"downloadCompleteCell"];
         tableView.delegate = self;
         tableView.dataSource = self;
+        tableView.sectionHeaderHeight = 0;
+        tableView.sectionFooterHeight = 0;
         tableView.separatorColor = JMColor(215, 215, 221);
         tableView.showsVerticalScrollIndicator = NO;
         tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -284,6 +288,11 @@
         
         NSLog(@"%@", fail);
     }];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 15.0;
 }
 
 - (void)didReceiveMemoryWarning {

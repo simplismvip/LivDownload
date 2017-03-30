@@ -1,31 +1,30 @@
 //
-//  ClassController.m
-//  ClassItem
+//  JMGridController.m
+//  LivDownload
 //
-//  Created by JM Zhao on 2017/3/7.
-//  Copyright © 2017年 JunMing. All rights reserved.
+//  Created by JM Zhao on 2017/3/30.
+//  Copyright © 2017年 yijia. All rights reserved.
 //
 
-#import "ClassController.h"
-
+#import "JMGridController.h"
 #import "ClassModel.h"
 #import "ClassListCollectionCell.h"
 #import "NSObject+JMProperty.h"
 #import "ClassCollectionViewFlowLayout.h"
 #import "ClassCollectionReusableView.h"
 #import "UIView+Extension.h"
-
 #import "UIAlertController+JMAlertController.h"
 #import "JMGestureButton.h"
-
 #import "UserDefaultTools.h"
+#import "JMDrawController.h"
 
-@interface ClassController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, ClassListCollectionCellDelegate>
+
+@interface JMGridController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, ClassListCollectionCellDelegate>
 @property (nonatomic, strong) UICollectionView *collection;
 @property (nonatomic, strong) ClassCollectionViewFlowLayout *collectionLayout;
 @end
 
-@implementation ClassController
+@implementation JMGridController
 static NSString *const collectionID = @"cell";
 
 - (NSMutableArray *)dataSource
@@ -119,7 +118,8 @@ static NSString *const collectionID = @"cell";
 // 选中某item
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    JMDrawController *draw = [[JMDrawController alloc] init];
+    [self presentViewController:draw animated:YES completion:nil];
 }
 
 // 长按某item，弹出copy和paste的菜单
@@ -205,13 +205,13 @@ static NSString *const collectionID = @"cell";
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
