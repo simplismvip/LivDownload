@@ -11,6 +11,7 @@
 #import "HomeController.h"
 #import "MineViewController.h"
 #import "DownloadNavController.h"
+#import "JMContainerController.h"
 #import "DownloadTabbar.h"
 #import "UIImage+JMImage.h"
 #import "NSObject+PYThemeExtension.h"
@@ -18,6 +19,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) HomeController *homeVC;
+@property (nonatomic, strong) JMContainerController *containerVC;
 @property (nonatomic, strong) DownloadController *downloadVC;
 @property (nonatomic, strong) MineViewController *mineVC;
 @property (nonatomic, assign) BOOL isBool;
@@ -60,8 +62,18 @@
     [self setupChildViewController:homeVC
                              image:[UIImage imageWithRenderingName:@"tabbar_mainframe"]
                           selImage:[[UIImage imageNamed:@"tabbar_mainframeHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
-                             title:@"Liv文件"
+                             title:@"Liv"
                                tag:baseTag+0];
+    
+    // LIv
+    JMContainerController *containerVC = [[JMContainerController alloc] init];
+    _containerVC = containerVC;
+    [self setupChildViewController:containerVC
+                             image:[UIImage imageWithRenderingName:@"tabbar_contacts"]
+                          selImage:[[UIImage imageNamed:@"tabbar_contactsHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
+                             title:@"文档"
+                               tag:baseTag+0];
+    
     
     // 下载
     DownloadController *downloadVC = [[DownloadController alloc] init];
@@ -69,7 +81,7 @@
     [self setupChildViewController:downloadVC
                              image:[UIImage imageWithRenderingName:@"tabbar_discover"]
                           selImage:[[UIImage imageNamed:@"tabbar_discoverHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
-                             title:@"我的下载"
+                             title:@"下载"
                                tag:baseTag+1];
     
     // 设置
