@@ -92,7 +92,7 @@
             
             UIButton *btn = _btnArray[i];
             btn.titleLabel.font = [UIFont systemFontOfSize:18];
-            [btn setTitleColor:JMColor(100, 163, 226) forState:(UIControlStateNormal)];
+            [btn setTitleColor:JMColor(52, 118, 237) forState:(UIControlStateNormal)];
         }else{
             
             UIButton *btn = _btnArray[i];

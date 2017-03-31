@@ -121,6 +121,10 @@
 		04B6C4081E8CCFE90073C215 /* JMTopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4051E8CCFE90073C215 /* JMTopTableView.m */; };
 		04B6C40D1E8CCFF60073C215 /* JMBottomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C40A1E8CCFF60073C215 /* JMBottomModel.m */; };
 		04B6C40E1E8CCFF60073C215 /* JMTopBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C40C1E8CCFF60073C215 /* JMTopBarModel.m */; };
+		04B6C4281E8DFC400073C215 /* JMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4271E8DFC400073C215 /* JMHomeCell.m */; };
+		04B6C42B1E8DFC6D0073C215 /* JMHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C42A1E8DFC6D0073C215 /* JMHomeModel.m */; };
+		04B6C4411E8E0EF40073C215 /* JMSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4401E8E0EF40073C215 /* JMSearchResultController.m */; };
+		04B6C4441E8E11160073C215 /* JMSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4431E8E11160073C215 /* JMSearchModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -340,6 +344,14 @@
 		04B6C40A1E8CCFF60073C215 /* JMBottomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBottomModel.m; sourceTree = "<group>"; };
 		04B6C40B1E8CCFF60073C215 /* JMTopBarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTopBarModel.h; sourceTree = "<group>"; };
 		04B6C40C1E8CCFF60073C215 /* JMTopBarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTopBarModel.m; sourceTree = "<group>"; };
+		04B6C4261E8DFC400073C215 /* JMHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHomeCell.h; sourceTree = "<group>"; };
+		04B6C4271E8DFC400073C215 /* JMHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHomeCell.m; sourceTree = "<group>"; };
+		04B6C4291E8DFC6D0073C215 /* JMHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHomeModel.h; sourceTree = "<group>"; };
+		04B6C42A1E8DFC6D0073C215 /* JMHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHomeModel.m; sourceTree = "<group>"; };
+		04B6C43F1E8E0EF40073C215 /* JMSearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSearchResultController.h; sourceTree = "<group>"; };
+		04B6C4401E8E0EF40073C215 /* JMSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchResultController.m; sourceTree = "<group>"; };
+		04B6C4421E8E11160073C215 /* JMSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSearchModel.h; sourceTree = "<group>"; };
+		04B6C4431E8E11160073C215 /* JMSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchModel.m; sourceTree = "<group>"; };
 		F56EE7321E66BE8800C2FE3F /* LivDownload-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LivDownload-Bridging-Header.h"; sourceTree = "<group>"; };
 		F56EE9161E66D60200C2FE3F /* LivDownload.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivDownload.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -645,6 +657,7 @@
 		04360E5B1E8CB1D800C40166 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04B6C42C1E8E02B50073C215 /* JMSearchBar */,
 				04360ED41E8CB9FB00C40166 /* JMGestureButton.h */,
 				04360ED51E8CB9FB00C40166 /* JMGestureButton.m */,
 				04360ED61E8CB9FB00C40166 /* UserDefaultTools.h */,
@@ -870,6 +883,8 @@
 		04360EC81E8CB75500C40166 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04B6C4291E8DFC6D0073C215 /* JMHomeModel.h */,
+				04B6C42A1E8DFC6D0073C215 /* JMHomeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -877,6 +892,8 @@
 		04360EC91E8CB75500C40166 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04B6C4261E8DFC400073C215 /* JMHomeCell.h */,
+				04B6C4271E8DFC400073C215 /* JMHomeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -926,6 +943,17 @@
 				04360EFB1E8CBA1900C40166 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		04B6C42C1E8E02B50073C215 /* JMSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				04B6C43F1E8E0EF40073C215 /* JMSearchResultController.h */,
+				04B6C4401E8E0EF40073C215 /* JMSearchResultController.m */,
+				04B6C4421E8E11160073C215 /* JMSearchModel.h */,
+				04B6C4431E8E11160073C215 /* JMSearchModel.m */,
+			);
+			path = JMSearchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1041,12 +1069,14 @@
 				04360EC41E8CB4D400C40166 /* MineModel.m in Sources */,
 				04360DE81E8CB1C600C40166 /* ScaleRatio.swift in Sources */,
 				04360DAF1E8CB1BD00C40166 /* UIView+Extension.m in Sources */,
+				04B6C42B1E8DFC6D0073C215 /* JMHomeModel.m in Sources */,
 				04360EC01E8CB4D400C40166 /* DownloadNavController.m in Sources */,
 				04360E6A1E8CB3F100C40166 /* PageShareBridgingUtils.m in Sources */,
 				04360E451E8CB1D000C40166 /* ExtensionArray.swift in Sources */,
 				04360F141E8CBB9200C40166 /* ClassListCollectionCell.m in Sources */,
 				04360EBF1E8CB4D400C40166 /* HomeController.m in Sources */,
 				04360E561E8CB1D000C40166 /* DIYButton.m in Sources */,
+				04B6C4411E8E0EF40073C215 /* JMSearchResultController.m in Sources */,
 				04360E491E8CB1D000C40166 /* Operators.swift in Sources */,
 				04360E441E8CB1D000C40166 /* Encoder.swift in Sources */,
 				04B6C40D1E8CCFF60073C215 /* JMBottomModel.m in Sources */,
@@ -1111,6 +1141,7 @@
 				04360DF21E8CB1C600C40166 /* WebsocketMessageUIDelegate.swift in Sources */,
 				04360E501E8CB1D000C40166 /* NSArray+MASAdditions.m in Sources */,
 				04360ECD1E8CB91300C40166 /* JMContainerController.m in Sources */,
+				04B6C4281E8DFC400073C215 /* JMHomeCell.m in Sources */,
 				04360F121E8CBB9200C40166 /* ClassCollectionReusableView.m in Sources */,
 				04360EFF1E8CBA1900C40166 /* SDWebImageCompat.m in Sources */,
 				04360E521E8CB1D000C40166 /* View+MASAdditions.m in Sources */,
@@ -1137,6 +1168,7 @@
 				04360DED1E8CB1C600C40166 /* LivePlaybackReader.swift in Sources */,
 				04360E541E8CB1D000C40166 /* AnnotationLayerDelegate.m in Sources */,
 				04360DE91E8CB1C600C40166 /* Stext.swift in Sources */,
+				04B6C4441E8E11160073C215 /* JMSearchModel.m in Sources */,
 				04360E4D1E8CB1D000C40166 /* MASLayoutConstraint.m in Sources */,
 				04360E411E8CB1D000C40166 /* OPAudioMangerTool.m in Sources */,
 				04360DE01E8CB1C600C40166 /* Icon.swift in Sources */,

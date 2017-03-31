@@ -23,16 +23,6 @@
 {
     [super viewWillAppear:animated];
     self.view.backgroundColor = [UIColor whiteColor];
-}
-
-- (NSMutableArray *)dataSource
-{
-    if (_dataSource == nil) {self.dataSource = [NSMutableArray array];}
-    return _dataSource;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
     
     NSArray *array = @[@"返回", @"画笔", @"擦除", @"录音", @"视频", @"播放", @"暂停"];
     for (NSString *string in array) {
@@ -55,11 +45,23 @@
         model.models = [bModels copy];
         [self.dataSource addObject:model];
     }
-
+    
     JMTopTableView *topbar = [[JMTopTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
     topbar.dataSource = self.dataSource;
     topbar.delegate = self;
     [self.view addSubview:topbar];
+}
+
+- (NSMutableArray *)dataSource
+{
+    if (_dataSource == nil) {self.dataSource = [NSMutableArray array];}
+    return _dataSource;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    
 }
 
 - (void)topTableView:(JMBottomType)bottomType didSelectRowAtIndexPath:(NSIndexPath *)indexPath
