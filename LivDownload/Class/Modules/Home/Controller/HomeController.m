@@ -11,6 +11,7 @@
 #import "JMHomeCell.h"
 #import "JMHomeModel.h"
 #import "JMSearchResultController.h"
+#import "JMSearchController.h"
 #import "JMSearchModel.h"
 
 #define JMColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
@@ -19,7 +20,7 @@
 @property (nonatomic, weak) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong) JMSearchResultController *resultVC;
-@property (nonatomic, strong) UISearchController *searchVC;
+@property (nonatomic, strong) JMSearchController *searchVC;
 @end
 
 static NSString *const ID = @"homeCell";
@@ -58,17 +59,12 @@ static NSString *const ID = @"homeCell";
     // 创建两个属性实例, 初始化搜索框
     self.resultVC = [JMSearchResultController new];
     self.resultVC.mainSearchController = self;
-    
-    self.searchVC= [[UISearchController alloc] initWithSearchResultsController:self.resultVC];
-    
-    // 设置与界面有关的样式
-    [self.searchVC.searchBar sizeToFit];
+    self.searchVC = [[JMSearchController alloc] initWithSearchResultsController:self.resultVC];
     homeTabView.tableHeaderView = self.searchVC.searchBar;
     
     // 设置搜索控制器的结果更新代理对象
     self.searchVC.searchResultsUpdater = self;
     self.searchVC.searchBar.delegate = self;
-    self.definesPresentationContext = YES;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

@@ -125,6 +125,8 @@
 		04B6C42B1E8DFC6D0073C215 /* JMHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C42A1E8DFC6D0073C215 /* JMHomeModel.m */; };
 		04B6C4411E8E0EF40073C215 /* JMSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4401E8E0EF40073C215 /* JMSearchResultController.m */; };
 		04B6C4441E8E11160073C215 /* JMSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4431E8E11160073C215 /* JMSearchModel.m */; };
+		04B6C4471E8E23BF0073C215 /* JMSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4461E8E23BF0073C215 /* JMSearchController.m */; };
+		04B6C44A1E8E35D50073C215 /* JMSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4491E8E35D50073C215 /* JMSearchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -352,6 +354,10 @@
 		04B6C4401E8E0EF40073C215 /* JMSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchResultController.m; sourceTree = "<group>"; };
 		04B6C4421E8E11160073C215 /* JMSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSearchModel.h; sourceTree = "<group>"; };
 		04B6C4431E8E11160073C215 /* JMSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchModel.m; sourceTree = "<group>"; };
+		04B6C4451E8E23BF0073C215 /* JMSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSearchController.h; sourceTree = "<group>"; };
+		04B6C4461E8E23BF0073C215 /* JMSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchController.m; sourceTree = "<group>"; };
+		04B6C4481E8E35D50073C215 /* JMSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSearchView.h; sourceTree = "<group>"; };
+		04B6C4491E8E35D50073C215 /* JMSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchView.m; sourceTree = "<group>"; };
 		F56EE7321E66BE8800C2FE3F /* LivDownload-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LivDownload-Bridging-Header.h"; sourceTree = "<group>"; };
 		F56EE9161E66D60200C2FE3F /* LivDownload.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivDownload.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -948,6 +954,10 @@
 		04B6C42C1E8E02B50073C215 /* JMSearchBar */ = {
 			isa = PBXGroup;
 			children = (
+				04B6C4451E8E23BF0073C215 /* JMSearchController.h */,
+				04B6C4461E8E23BF0073C215 /* JMSearchController.m */,
+				04B6C4481E8E35D50073C215 /* JMSearchView.h */,
+				04B6C4491E8E35D50073C215 /* JMSearchView.m */,
 				04B6C43F1E8E0EF40073C215 /* JMSearchResultController.h */,
 				04B6C4401E8E0EF40073C215 /* JMSearchResultController.m */,
 				04B6C4421E8E11160073C215 /* JMSearchModel.h */,
@@ -1076,6 +1086,7 @@
 				04360F141E8CBB9200C40166 /* ClassListCollectionCell.m in Sources */,
 				04360EBF1E8CB4D400C40166 /* HomeController.m in Sources */,
 				04360E561E8CB1D000C40166 /* DIYButton.m in Sources */,
+				04B6C4471E8E23BF0073C215 /* JMSearchController.m in Sources */,
 				04B6C4411E8E0EF40073C215 /* JMSearchResultController.m in Sources */,
 				04360E491E8CB1D000C40166 /* Operators.swift in Sources */,
 				04360E441E8CB1D000C40166 /* Encoder.swift in Sources */,
@@ -1084,6 +1095,7 @@
 				04360ED81E8CB9FB00C40166 /* JMGestureButton.m in Sources */,
 				04360EC31E8CB4D400C40166 /* MineViewController.m in Sources */,
 				04360E671E8CB1D800C40166 /* UIUtils.swift in Sources */,
+				04B6C44A1E8E35D50073C215 /* JMSearchView.m in Sources */,
 				04360EC21E8CB4D400C40166 /* DownloadTabbar.m in Sources */,
 				04360E3F1E8CB1D000C40166 /* AFURLResponseSerialization.m in Sources */,
 				04B6C4081E8CCFE90073C215 /* JMTopTableView.m in Sources */,
