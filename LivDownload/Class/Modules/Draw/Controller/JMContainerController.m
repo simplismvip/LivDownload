@@ -54,6 +54,7 @@
     [self.navigationController.navigationBar setNavigationBarLine:0.5];
 }
 
+#pragma mark -- 左右item
 - (void)switchAction:(UIBarButtonItem *)rightItem
 {
     JMGridController *vc = self.controllers[self.segmentBar.selectIndex];
@@ -61,32 +62,56 @@
     [self setBarItem:vc.key];
 }
 
+- (void)leftItem:(UIBarButtonItem *)left
+{
+    JMGridController *vc = self.controllers[self.segmentBar.selectIndex];
+    [vc leftSwitchStatus];
+    [self setBarItem:vc.key];
+}
+
 #pragma mark -- 创建子View
 - (void)creatSubviews:(NSInteger)selecIndex
 {
-    NSMutableArray *models = [NSMutableArray array];
+    NSMutableArray *models0 = [NSMutableArray array];
+    for (int i = 0; i < 5; i ++) {
+        
+        NSString *image = @"http://img.taopic.com/uploads/allimg/110728/6310-110HQ1491019.jpg";
+        NSDictionary *dic = [self getDic:[NSString stringWithFormat:@"课堂 :%d", i] image:image count:[NSString stringWithFormat:@"人数 :%d", i] classMembers:@"none"];
+        [models0 addObject:[ClassModel objectWithDictionary:dic]];
+    }
+    
+    NSMutableArray *models1 = [NSMutableArray array];
     for (int i = 0; i < 7; i ++) {
         
         NSString *image = @"http://img.taopic.com/uploads/allimg/110728/6310-110HQ1491019.jpg";
         NSDictionary *dic = [self getDic:[NSString stringWithFormat:@"课堂 :%d", i] image:image count:[NSString stringWithFormat:@"人数 :%d", i] classMembers:@"none"];
-        [models addObject:[ClassModel objectWithDictionary:dic]];
+        [models1 addObject:[ClassModel objectWithDictionary:dic]];
     }
+
+    NSMutableArray *models2 = [NSMutableArray array];
+    for (int i = 0; i < 9; i ++) {
+        
+        NSString *image = @"http://img.taopic.com/uploads/allimg/110728/6310-110HQ1491019.jpg";
+        NSDictionary *dic = [self getDic:[NSString stringWithFormat:@"课堂 :%d", i] image:image count:[NSString stringWithFormat:@"人数 :%d", i] classMembers:@"none"];
+        [models2 addObject:[ClassModel objectWithDictionary:dic]];
+    }
+
     
     // 创建控制器
     JMGridController *class1 = [[JMGridController alloc] init];
-    class1.dataSource = models;
+    class1.dataSource = models0;
     class1.title = @"文档";
     class1.key = @"pub";
     
     JMGridController *class2 = [[JMGridController alloc] init];
     class2.title = @"回放";
     class2.key = @"pra";
-    class2.dataSource = models;
+    class2.dataSource = models1;
     
     JMGridController *class3 = [[JMGridController alloc] init];
     class3.title = @"课程";
     class3.key = @"pra";
-    class3.dataSource = models;
+    class3.dataSource = models2;
     
     self.controllers = [NSMutableArray arrayWithArray:@[class1, class2, class3]];
     
@@ -114,6 +139,10 @@
     UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:tabbarName] style:(UIBarButtonItemStyleDone) target:self action:@selector(switchAction:)];
     self.navigationItem.rightBarButtonItem = right;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    // 将leftItem设置为自定义按钮
+    UIBarButtonItem *leftItem =[[UIBarButtonItem alloc] initWithTitle:@"编辑" style:(UIBarButtonItemStyleDone) target:self action:@selector(leftItem:)];
+    self.navigationItem.leftBarButtonItem = leftItem;
 }
 
 #pragma mark -- 切换控制机器

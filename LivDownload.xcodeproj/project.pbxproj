@@ -13,6 +13,7 @@
 		0425D1FD1E5FD74900F759B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0425D1FC1E5FD74900F759B7 /* Assets.xcassets */; };
 		0425D2001E5FD74900F759B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0425D1FE1E5FD74900F759B7 /* LaunchScreen.storyboard */; };
 		0425D20B1E5FD74900F759B7 /* LivDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D20A1E5FD74900F759B7 /* LivDownloadTests.m */; };
+		0430E7971E8F442100FE24F2 /* JMSearchHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0430E7961E8F442100FE24F2 /* JMSearchHistoryCell.m */; };
 		04360DAC1E8CB1BD00C40166 /* NSObject+PYThemeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360DA51E8CB1BD00C40166 /* NSObject+PYThemeExtension.m */; };
 		04360DAD1E8CB1BD00C40166 /* UIImage+JMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360DA71E8CB1BD00C40166 /* UIImage+JMImage.m */; };
 		04360DAE1E8CB1BD00C40166 /* UIImage+MetaImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04360DA91E8CB1BD00C40166 /* UIImage+MetaImage.m */; };
@@ -151,6 +152,8 @@
 		0425D2061E5FD74900F759B7 /* LivDownloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivDownloadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0425D20A1E5FD74900F759B7 /* LivDownloadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LivDownloadTests.m; sourceTree = "<group>"; };
 		0425D20C1E5FD74900F759B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0430E7951E8F442100FE24F2 /* JMSearchHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSearchHistoryCell.h; sourceTree = "<group>"; };
+		0430E7961E8F442100FE24F2 /* JMSearchHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchHistoryCell.m; sourceTree = "<group>"; };
 		04360DA41E8CB1BD00C40166 /* NSObject+PYThemeExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PYThemeExtension.h"; sourceTree = "<group>"; };
 		04360DA51E8CB1BD00C40166 /* NSObject+PYThemeExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PYThemeExtension.m"; sourceTree = "<group>"; };
 		04360DA61E8CB1BD00C40166 /* UIImage+JMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JMImage.h"; sourceTree = "<group>"; };
@@ -954,6 +957,8 @@
 		04B6C42C1E8E02B50073C215 /* JMSearchBar */ = {
 			isa = PBXGroup;
 			children = (
+				0430E7951E8F442100FE24F2 /* JMSearchHistoryCell.h */,
+				0430E7961E8F442100FE24F2 /* JMSearchHistoryCell.m */,
 				04B6C4451E8E23BF0073C215 /* JMSearchController.h */,
 				04B6C4461E8E23BF0073C215 /* JMSearchController.m */,
 				04B6C4481E8E35D50073C215 /* JMSearchView.h */,
@@ -1091,6 +1096,7 @@
 				04360E491E8CB1D000C40166 /* Operators.swift in Sources */,
 				04360E441E8CB1D000C40166 /* Encoder.swift in Sources */,
 				04B6C40D1E8CCFF60073C215 /* JMBottomModel.m in Sources */,
+				0430E7971E8F442100FE24F2 /* JMSearchHistoryCell.m in Sources */,
 				04360DEC1E8CB1C600C40166 /* LivePlaybackDelegate.swift in Sources */,
 				04360ED81E8CB9FB00C40166 /* JMGestureButton.m in Sources */,
 				04360EC31E8CB4D400C40166 /* MineViewController.m in Sources */,

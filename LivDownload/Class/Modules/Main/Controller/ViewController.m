@@ -56,13 +56,13 @@
 
 - (void)setupChildViewController
 {
-    // LIv
+    // 上课
     HomeController *homeVC = [[HomeController alloc] init];
     _homeVC = homeVC;
     [self setupChildViewController:homeVC
                              image:[UIImage imageWithRenderingName:@"tabbar_mainframe"]
                           selImage:[[UIImage imageNamed:@"tabbar_mainframeHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
-                             title:@"Liv"
+                             title:@"上课"
                                tag:baseTag+0];
     
     // LIv

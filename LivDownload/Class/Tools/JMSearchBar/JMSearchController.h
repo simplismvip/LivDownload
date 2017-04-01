@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface JMSearchController : UISearchController
-
+@property (nonatomic, weak) UITableView *tableView;
 @end

@@ -24,7 +24,7 @@
     [super viewWillAppear:animated];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *array = @[@"返回", @"画笔", @"擦除", @"录音", @"视频", @"播放", @"暂停"];
+    NSArray *array = @[@"返回", @"画笔", @"擦除", @"录音", @"播放", @"表情", @"颜色", @"VOIP"];
     for (NSString *string in array) {
         
         JMTopBarModel *model = [[JMTopBarModel alloc] init];

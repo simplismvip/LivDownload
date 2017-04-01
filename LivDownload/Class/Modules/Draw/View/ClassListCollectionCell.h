@@ -10,6 +10,7 @@
 @protocol ClassListCollectionCellDelegate <NSObject>
 @optional
 - (void)showRoomMembers:(NSIndexPath *)indexPath currentPoint:(CGPoint)currentPoint;
+- (void)deleteByIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @class ClassModel;
@@ -18,4 +19,5 @@
 @property (nonatomic, strong) UICollectionView *collection;
 @property (nonatomic, strong) ClassModel *model;
 @property (nonatomic, assign) BOOL isGrid;
+@property (nonatomic, assign) BOOL inEditState; //是否处于编辑状态
 @end

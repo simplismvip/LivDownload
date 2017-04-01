@@ -9,9 +9,10 @@
 #import "JMSearchController.h"
 #import "JMSearchView.h"
 #import "UIView+Extension.h"
+#import "JMSearchHistoryCell.h"
 
-@interface JMSearchController ()<UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, weak) UITableView *tableView;
+@interface JMSearchController ()<UITableViewDataSource, UITableViewDelegate, JMSearchHistoryCellDelegate>
+
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @end
 
@@ -29,14 +30,13 @@ static NSString *const ID = @"cell";
     
     [self.searchBar sizeToFit];
     self.definesPresentationContext = YES;
-    
     [self creatTableView];
 }
 
 - (void)creatTableView
 {
     UITableView *tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, self.view.height-64) style:(UITableViewStylePlain)];
-    [tabView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+    [tabView registerClass:[JMSearchHistoryCell class] forCellReuseIdentifier:ID];
     tabView.delegate = self;
     tabView.dataSource = self;
     tabView.separatorColor = tabView.backgroundColor;
@@ -59,14 +59,22 @@ static NSString *const ID = @"cell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"indexPath = %ld", (long)indexPath.row];
+    JMSearchHistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    if (!cell) {cell = [[JMSearchHistoryCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:ID];}
+    cell.delegate = self;
+    [cell setImage:@"search_32" btnImage:@"close_icon_black" content:@"搜索历史"];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"选择 -- %@", indexPath);
+}
+
+#pragma mark -- JMSearchHistoryCellDelegate
+- (void)deleteCell:(NSIndexPath *)indexPath
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

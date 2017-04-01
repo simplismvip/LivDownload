@@ -10,6 +10,7 @@
 
 @interface JMGridController : UIViewController
 - (void)switchGrid;
+- (void)leftSwitchStatus;
 - (void)reloadData;
 @property (nonatomic, copy) NSString *key;
 @property (nonatomic, strong) NSMutableArray *dataSource;

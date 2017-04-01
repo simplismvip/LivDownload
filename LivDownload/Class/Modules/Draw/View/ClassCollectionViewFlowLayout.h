@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ClassCollectionViewFlowLayout : UICollectionViewFlowLayout
+@protocol ClassCollectionViewFlowLayoutDelegate <NSObject>
 
+/**
+ * 改变编辑状态
+ */
+- (void)didChangeEditState:(BOOL)inEditState;
+
+/**
+ * 更新数据源
+ */
+- (void)moveItemAtIndexPath:(NSIndexPath *)formPath toIndexPath:(NSIndexPath *)toPath;
+
+@end
+
+@interface ClassCollectionViewFlowLayout : UICollectionViewFlowLayout
+@property (nonatomic, assign) BOOL inEditState;
+@property (nonatomic, assign) id<ClassCollectionViewFlowLayoutDelegate> delegate;
 @end

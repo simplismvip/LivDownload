@@ -40,13 +40,24 @@ static NSString *const ID = @"homeCell";
 
 - (void)creatTableView
 {
-    UITableView *homeTabView = [[UITableView alloc] initWithFrame:self.view.bounds style:(UITableViewStyleGrouped)];
+    NSArray *array = @[@"apple", @"public_1", @"class_1", @"room_1", @"class_2", @"apple_1", @"class_3", @"pub_class", @"pub_Room", @"roomNumber"];
+    
+    for (NSString *string in array) {
+        
+        JMSearchModel *model = [JMSearchModel new];
+        model.name = string;
+        model.type = 0;
+        [self.dataSource addObject:model];
+    }
+    
+    UITableView *homeTabView = [[UITableView alloc] initWithFrame:self.view.bounds style:(UITableViewStylePlain)];
     [homeTabView registerClass:[JMHomeCell class] forCellReuseIdentifier:ID];
     homeTabView.delegate = self;
     homeTabView.dataSource = self;
     homeTabView.sectionHeaderHeight = 0;
     homeTabView.sectionFooterHeight = 0;
-    homeTabView.separatorColor = homeTabView.backgroundColor;
+    homeTabView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    // homeTabView.separatorColor = homeTabView.backgroundColor;
     
     [self.view addSubview:homeTabView];
     
@@ -69,18 +80,19 @@ static NSString *const ID = @"homeCell";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 10;//self.dataSource.count;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 5;//[self.dataSource[section] count];
+    return self.dataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     JMHomeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+    JMSearchModel *model = self.dataSource[indexPath.row];
+    cell.textLabel.text = model.name;
     return cell;
 }
 
@@ -92,24 +104,30 @@ static NSString *const ID = @"homeCell";
 #pragma mark - UISearchResultsUpdating
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController
 {
-    // 获取scope被选中的下标
-    NSInteger selectedType = searchController.searchBar.selectedScopeButtonIndex;
-    
-    // 获取到用户输入的数据
     NSString *searchText = searchController.searchBar.text;
-    NSMutableArray *searchResult = [[NSMutableArray alloc]init];
+    NSMutableArray *searchResult = [NSMutableArray array];
+    
     for (JMSearchModel *model in self.dataSource) {
         
-        NSRange range=[model.name rangeOfString:searchText];
+        NSRange range = [[model.name lowercaseString] rangeOfString:[searchText lowercaseString]];
         
-        if (range.length>0 && model.type == selectedType) {
+        if (range.length > 0) {
             
             [searchResult addObject:model];
         }
     }
-    
+
     self.resultVC.searchResults = searchResult;
     [self.resultVC.tableView reloadData];
+    
+    if (searchText.length > 0) {
+        
+        [self.searchVC.tableView setHidden:YES];
+    }else{
+        
+        [self.searchVC.tableView setHidden:NO];
+        [self.searchVC.tableView reloadData];
+    }
 }
 
 #pragma mark - UISearchBarDelegate

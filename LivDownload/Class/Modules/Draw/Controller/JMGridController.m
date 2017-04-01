@@ -19,9 +19,10 @@
 #import "JMDrawController.h"
 
 
-@interface JMGridController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, ClassListCollectionCellDelegate>
+@interface JMGridController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, ClassListCollectionCellDelegate, ClassCollectionViewFlowLayoutDelegate>
 @property (nonatomic, strong) UICollectionView *collection;
 @property (nonatomic, strong) ClassCollectionViewFlowLayout *collectionLayout;
+@property (nonatomic, assign) BOOL inEditState; //是否处于编辑状态
 @end
 
 @implementation JMGridController
@@ -67,6 +68,7 @@ static NSString *const collectionID = @"cell";
     if (!_collection)
     {
         self.collectionLayout = [[ClassCollectionViewFlowLayout alloc] init];
+        self.collectionLayout.delegate = self;
         self.collection = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height-94) collectionViewLayout:_collectionLayout];
         _collection.backgroundColor = [UIColor whiteColor];
         _collection.dataSource = self;
@@ -157,17 +159,16 @@ static NSString *const collectionID = @"cell";
 }
 
 #pragma mark UICollectionViewDelegateFlowLayout
-
 // 动态设置每个Item的尺寸大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([UserDefaultTools readBoolByKey:self.key]) {
         
         NSInteger rows = (self.view.width-10*4)/3;
-        return CGSizeMake(rows, rows+40);
+        return CGSizeMake(rows, rows+20);
         
     } else {
-        return CGSizeMake(self.view.width-20, (self.view.width-6)/4+20);
+        return CGSizeMake(self.view.width-20, 44);
     }
 }
 
@@ -197,6 +198,77 @@ static NSString *const collectionID = @"cell";
 - (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath*)destinationIndexPath
 {
     
+}
+
+#pragma mark -- ClassListCollectionCellDelegate
+- (void)showRoomMembers:(NSIndexPath *)indexPath currentPoint:(CGPoint)currentPoint
+{
+
+}
+
+- (void)deleteByIndexPath:(NSIndexPath *)indexPath
+{
+    [self.collection performBatchUpdates:^{
+        
+        [self.collection deleteItemsAtIndexPaths:@[indexPath]];
+        [self.dataSource removeObjectAtIndex:indexPath.row];
+        
+    } completion:^(BOOL finished) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [self.collection reloadData];
+        });
+    }];
+}
+
+#pragma mark -- 左侧item
+- (void)leftSwitchStatus
+{
+    // 点击了管理
+    if (!self.inEditState) {
+        
+        self.inEditState = YES;
+        self.collection.allowsSelection = NO;
+    
+    } else { // 点击了完成
+        
+        self.inEditState = NO;
+        self.collection.allowsSelection = YES;
+    }
+    
+    // 进入或退出编辑状态
+    [self.collectionLayout setInEditState:self.inEditState];
+}
+
+#pragma mark -- ClassListCollectionCellDelegate
+- (void)didChangeEditState:(BOOL)inEditState
+{
+    self.inEditState = inEditState;
+    for (ClassListCollectionCell *cell in self.collection.visibleCells) {
+        
+        cell.inEditState = inEditState;
+    }
+}
+
+// 改变数据源中model的位置
+- (void)moveItemAtIndexPath:(NSIndexPath *)formPath toIndexPath:(NSIndexPath *)toPath
+{
+    id model = self.dataSource[formPath.row];
+    
+    // 先把移动的这个model移除
+    [self.dataSource removeObject:model];
+    
+    // 再把这个移动的model插入到相应的位置
+    [self.dataSource insertObject:model atIndex:toPath.row];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    for (ClassListCollectionCell *cell in self.collection.visibleCells) {
+        
+        cell.inEditState = _inEditState;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
