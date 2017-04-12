@@ -12,6 +12,13 @@
 #import "JMBottomView.h"
 #import "JMTopBarModel.h"
 #import "JMBottomModel.h"
+#import "JMTextView.h"
+#import "JMGestureButton.h"
+#import "JMTextNoteView.h"
+
+#define JMColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define JMColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define JMRandomColor JMColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 @interface JMDrawController ()<JMTopTableViewDelegate>
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -24,22 +31,49 @@
     [super viewWillAppear:animated];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *array = @[@"返回", @"画笔", @"擦除", @"录音", @"播放", @"表情", @"颜色", @"VOIP"];
-    for (NSString *string in array) {
+    NSArray *array = @[@{@"返回":@[@"0"]}, @{@"画笔":@[]}, @{@"擦除":@[]}, @{@"录音":@[]}, @{@"播放":@[]}, @{@"表情":@[],}, @{@"颜色":@[@"0", @"0", @"0", @"0", @"0", @"0"]}, @{@"宽度":@[@"point_01", @"point_02", @"point_03", @"point_04", @"point_05", @"point_06", @"point_07"]}];
+    
+    for (NSDictionary *string in array) {
         
         JMTopBarModel *model = [[JMTopBarModel alloc] init];
-        model.title = string;
+        model.title = string.allKeys.lastObject;
         model.column = 1;
-        NSMutableArray *bModels = [NSMutableArray array];
-        NSInteger number = 3+arc4random()%4;
         
-        for (int j = 0; j < number; j ++) {
+        NSMutableArray *bModels = [NSMutableArray array];
+        
+        if ([model.title isEqualToString:@"颜色"]) {
             
-            JMBottomModel *bModel = [[JMBottomModel alloc] init];
-            bModel.title = @"直线";
-            bModel.isSelect = NO;
-            bModel.image = @"more";
-            [bModels addObject:bModel];
+            for (NSString *image in string.allValues.lastObject) {
+                
+                JMBottomModel *bModel = [[JMBottomModel alloc] init];
+                bModel.isSelect = NO;
+                bModel.title = image;
+                bModel.color = JMRandomColor;
+                [bModels addObject:bModel];
+            }
+            
+        }else if ([model.title isEqualToString:@"宽度"]){
+        
+            for (NSString *image in string.allValues.lastObject) {
+                
+                JMBottomModel *bModel = [[JMBottomModel alloc] init];
+                bModel.title = image;
+                bModel.isSelect = NO;
+                bModel.image = image;
+                [bModels addObject:bModel];
+            }
+            
+        }else{
+        
+            NSInteger number = 3+arc4random()%4;
+            for (int j = 0; j < number; j ++) {
+                
+                JMBottomModel *bModel = [[JMBottomModel alloc] init];
+                bModel.title = @"直线";
+                bModel.isSelect = NO;
+                bModel.image = @"more";
+                [bModels addObject:bModel];
+            }
         }
         
         model.models = [bModels copy];
@@ -65,8 +99,9 @@
 }
 
 - (void)topTableView:(JMBottomType)bottomType didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
+{    
+    JMTextNoteView *textView = [[JMTextNoteView alloc] initWithFrame:CGRectMake(100, 100, 60, 20)];
+    [self.view addSubview:textView];
 }
 
 - (void)topTableViewDisSelectSection:(NSInteger)section

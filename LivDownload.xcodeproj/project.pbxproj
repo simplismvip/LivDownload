@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040C19421E9C79BE0040957D /* EmojiCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C193D1E9C79BE0040957D /* EmojiCollectionView.m */; };
+		040C19431E9C79BE0040957D /* JMSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C193F1E9C79BE0040957D /* JMSignView.m */; };
+		040C19441E9C79BE0040957D /* JMWriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C19411E9C79BE0040957D /* JMWriteView.m */; };
+		040C19531E9C79D10040957D /* OPBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C19471E9C79D10040957D /* OPBrightDarkGradView.m */; };
+		040C19541E9C79D10040957D /* OPColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C19491E9C79D10040957D /* OPColorPickerView.m */; };
+		040C19551E9C79D10040957D /* OPColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C194B1E9C79D10040957D /* OPColorSwatchView.m */; };
+		040C19561E9C79D10040957D /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C194D1E9C79D10040957D /* colormap.png */; };
+		040C19571E9C79D10040957D /* iOS-Color-Picker.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 040C194E1E9C79D10040957D /* iOS-Color-Picker.podspec */; };
+		040C19581E9C79D10040957D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 040C194F1E9C79D10040957D /* LICENSE */; };
+		040C19591E9C79D10040957D /* Slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C19501E9C79D10040957D /* Slider.png */; };
+		040C195A1E9C79D10040957D /* sliderPageControlBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C19511E9C79D10040957D /* sliderPageControlBg.png */; };
+		040C195B1E9C79D10040957D /* sliderPageControlBgRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C19521E9C79D10040957D /* sliderPageControlBgRed.png */; };
+		040C195E1E9C80390040957D /* JMLineWidthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C195D1E9C80390040957D /* JMLineWidthCell.m */; };
 		0425D1F21E5FD74900F759B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D1F11E5FD74900F759B7 /* main.m */; };
 		0425D1F51E5FD74900F759B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D1F41E5FD74900F759B7 /* AppDelegate.m */; };
 		0425D1FB1E5FD74900F759B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0425D1F91E5FD74900F759B7 /* Main.storyboard */; };
@@ -128,6 +141,9 @@
 		04B6C4441E8E11160073C215 /* JMSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4431E8E11160073C215 /* JMSearchModel.m */; };
 		04B6C4471E8E23BF0073C215 /* JMSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4461E8E23BF0073C215 /* JMSearchController.m */; };
 		04B6C44A1E8E35D50073C215 /* JMSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C4491E8E35D50073C215 /* JMSearchView.m */; };
+		04D753BE1E9B3A8200DA8685 /* JMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D753BD1E9B3A8200DA8685 /* JMTextView.m */; };
+		04D753C11E9B40B000DA8685 /* JMTextNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D753C01E9B40B000DA8685 /* JMTextNoteView.m */; };
+		04D753C41E9B5B9900DA8685 /* JMDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D753C31E9B5B9900DA8685 /* JMDraw.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +157,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040C193C1E9C79BE0040957D /* EmojiCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCollectionView.h; sourceTree = "<group>"; };
+		040C193D1E9C79BE0040957D /* EmojiCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCollectionView.m; sourceTree = "<group>"; };
+		040C193E1E9C79BE0040957D /* JMSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSignView.h; sourceTree = "<group>"; };
+		040C193F1E9C79BE0040957D /* JMSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSignView.m; sourceTree = "<group>"; };
+		040C19401E9C79BE0040957D /* JMWriteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMWriteView.h; sourceTree = "<group>"; };
+		040C19411E9C79BE0040957D /* JMWriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMWriteView.m; sourceTree = "<group>"; };
+		040C19461E9C79D10040957D /* OPBrightDarkGradView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPBrightDarkGradView.h; sourceTree = "<group>"; };
+		040C19471E9C79D10040957D /* OPBrightDarkGradView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPBrightDarkGradView.m; sourceTree = "<group>"; };
+		040C19481E9C79D10040957D /* OPColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPColorPickerView.h; sourceTree = "<group>"; };
+		040C19491E9C79D10040957D /* OPColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPColorPickerView.m; sourceTree = "<group>"; };
+		040C194A1E9C79D10040957D /* OPColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPColorSwatchView.h; sourceTree = "<group>"; };
+		040C194B1E9C79D10040957D /* OPColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPColorSwatchView.m; sourceTree = "<group>"; };
+		040C194D1E9C79D10040957D /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		040C194E1E9C79D10040957D /* iOS-Color-Picker.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iOS-Color-Picker.podspec"; sourceTree = "<group>"; };
+		040C194F1E9C79D10040957D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		040C19501E9C79D10040957D /* Slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider.png; sourceTree = "<group>"; };
+		040C19511E9C79D10040957D /* sliderPageControlBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderPageControlBg.png; sourceTree = "<group>"; };
+		040C19521E9C79D10040957D /* sliderPageControlBgRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderPageControlBgRed.png; sourceTree = "<group>"; };
+		040C195C1E9C80390040957D /* JMLineWidthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLineWidthCell.h; sourceTree = "<group>"; };
+		040C195D1E9C80390040957D /* JMLineWidthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLineWidthCell.m; sourceTree = "<group>"; };
 		0425D1ED1E5FD74900F759B7 /* LivDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0425D1F11E5FD74900F759B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0425D1F31E5FD74900F759B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -361,6 +397,12 @@
 		04B6C4461E8E23BF0073C215 /* JMSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchController.m; sourceTree = "<group>"; };
 		04B6C4481E8E35D50073C215 /* JMSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSearchView.h; sourceTree = "<group>"; };
 		04B6C4491E8E35D50073C215 /* JMSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSearchView.m; sourceTree = "<group>"; };
+		04D753BC1E9B3A8200DA8685 /* JMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextView.h; sourceTree = "<group>"; };
+		04D753BD1E9B3A8200DA8685 /* JMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextView.m; sourceTree = "<group>"; };
+		04D753BF1E9B40B000DA8685 /* JMTextNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextNoteView.h; sourceTree = "<group>"; };
+		04D753C01E9B40B000DA8685 /* JMTextNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextNoteView.m; sourceTree = "<group>"; };
+		04D753C21E9B5B9900DA8685 /* JMDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDraw.h; sourceTree = "<group>"; };
+		04D753C31E9B5B9900DA8685 /* JMDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDraw.m; sourceTree = "<group>"; };
 		F56EE7321E66BE8800C2FE3F /* LivDownload-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LivDownload-Bridging-Header.h"; sourceTree = "<group>"; };
 		F56EE9161E66D60200C2FE3F /* LivDownload.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivDownload.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -383,6 +425,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040C193B1E9C79BE0040957D /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				040C193C1E9C79BE0040957D /* EmojiCollectionView.h */,
+				040C193D1E9C79BE0040957D /* EmojiCollectionView.m */,
+				040C193E1E9C79BE0040957D /* JMSignView.h */,
+				040C193F1E9C79BE0040957D /* JMSignView.m */,
+				040C19401E9C79BE0040957D /* JMWriteView.h */,
+				040C19411E9C79BE0040957D /* JMWriteView.m */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+		040C19451E9C79D10040957D /* ColorPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				040C19461E9C79D10040957D /* OPBrightDarkGradView.h */,
+				040C19471E9C79D10040957D /* OPBrightDarkGradView.m */,
+				040C19481E9C79D10040957D /* OPColorPickerView.h */,
+				040C19491E9C79D10040957D /* OPColorPickerView.m */,
+				040C194A1E9C79D10040957D /* OPColorSwatchView.h */,
+				040C194B1E9C79D10040957D /* OPColorSwatchView.m */,
+				040C194C1E9C79D10040957D /* Resources */,
+			);
+			path = ColorPickerView;
+			sourceTree = "<group>";
+		};
+		040C194C1E9C79D10040957D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				040C194D1E9C79D10040957D /* colormap.png */,
+				040C194E1E9C79D10040957D /* iOS-Color-Picker.podspec */,
+				040C194F1E9C79D10040957D /* LICENSE */,
+				040C19501E9C79D10040957D /* Slider.png */,
+				040C19511E9C79D10040957D /* sliderPageControlBg.png */,
+				040C19521E9C79D10040957D /* sliderPageControlBgRed.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0425D1E41E5FD74900F759B7 = {
 			isa = PBXGroup;
 			children = (
@@ -666,9 +748,15 @@
 		04360E5B1E8CB1D800C40166 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				040C19451E9C79D10040957D /* ColorPickerView */,
+				040C193B1E9C79BE0040957D /* Emoji */,
 				04B6C42C1E8E02B50073C215 /* JMSearchBar */,
 				04360ED41E8CB9FB00C40166 /* JMGestureButton.h */,
 				04360ED51E8CB9FB00C40166 /* JMGestureButton.m */,
+				04D753BC1E9B3A8200DA8685 /* JMTextView.h */,
+				04D753BD1E9B3A8200DA8685 /* JMTextView.m */,
+				04D753BF1E9B40B000DA8685 /* JMTextNoteView.h */,
+				04D753C01E9B40B000DA8685 /* JMTextNoteView.m */,
 				04360ED61E8CB9FB00C40166 /* UserDefaultTools.h */,
 				04360ED71E8CB9FB00C40166 /* UserDefaultTools.m */,
 				04360E681E8CB3F100C40166 /* PageShareBridgingUtils.h */,
@@ -873,6 +961,8 @@
 			children = (
 				04B6C4001E8CCFE90073C215 /* JMBottomCell.h */,
 				04B6C4011E8CCFE90073C215 /* JMBottomCell.m */,
+				040C195C1E9C80390040957D /* JMLineWidthCell.h */,
+				040C195D1E9C80390040957D /* JMLineWidthCell.m */,
 				04B6C4021E8CCFE90073C215 /* JMBottomView.h */,
 				04B6C4031E8CCFE90073C215 /* JMBottomView.m */,
 				04B6C4041E8CCFE90073C215 /* JMTopTableView.h */,
@@ -885,6 +975,8 @@
 				04360F0F1E8CBB9200C40166 /* ClassCollectionViewFlowLayout.m */,
 				04360F101E8CBB9200C40166 /* ClassListCollectionCell.h */,
 				04360F111E8CBB9200C40166 /* ClassListCollectionCell.m */,
+				04D753C21E9B5B9900DA8685 /* JMDraw.h */,
+				04D753C31E9B5B9900DA8685 /* JMDraw.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1056,7 +1148,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040C19591E9C79D10040957D /* Slider.png in Resources */,
+				040C19571E9C79D10040957D /* iOS-Color-Picker.podspec in Resources */,
+				040C195B1E9C79D10040957D /* sliderPageControlBgRed.png in Resources */,
+				040C19561E9C79D10040957D /* colormap.png in Resources */,
 				04360E481E8CB1D000C40166 /* Info.plist in Resources */,
+				040C19581E9C79D10040957D /* LICENSE in Resources */,
+				040C195A1E9C79D10040957D /* sliderPageControlBg.png in Resources */,
 				0425D2001E5FD74900F759B7 /* LaunchScreen.storyboard in Resources */,
 				0425D1FD1E5FD74900F759B7 /* Assets.xcassets in Resources */,
 				0425D1FB1E5FD74900F759B7 /* Main.storyboard in Resources */,
@@ -1095,8 +1193,10 @@
 				04B6C4411E8E0EF40073C215 /* JMSearchResultController.m in Sources */,
 				04360E491E8CB1D000C40166 /* Operators.swift in Sources */,
 				04360E441E8CB1D000C40166 /* Encoder.swift in Sources */,
+				04D753C41E9B5B9900DA8685 /* JMDraw.m in Sources */,
 				04B6C40D1E8CCFF60073C215 /* JMBottomModel.m in Sources */,
 				0430E7971E8F442100FE24F2 /* JMSearchHistoryCell.m in Sources */,
+				040C19441E9C79BE0040957D /* JMWriteView.m in Sources */,
 				04360DEC1E8CB1C600C40166 /* LivePlaybackDelegate.swift in Sources */,
 				04360ED81E8CB9FB00C40166 /* JMGestureButton.m in Sources */,
 				04360EC31E8CB4D400C40166 /* MineViewController.m in Sources */,
@@ -1104,6 +1204,7 @@
 				04B6C44A1E8E35D50073C215 /* JMSearchView.m in Sources */,
 				04360EC21E8CB4D400C40166 /* DownloadTabbar.m in Sources */,
 				04360E3F1E8CB1D000C40166 /* AFURLResponseSerialization.m in Sources */,
+				040C195E1E9C80390040957D /* JMLineWidthCell.m in Sources */,
 				04B6C4081E8CCFE90073C215 /* JMTopTableView.m in Sources */,
 				04360DEE1E8CB1C600C40166 /* LivePlaybackViewController.swift in Sources */,
 				04360EFD1E8CBA1900C40166 /* NSData+ImageContentType.m in Sources */,
@@ -1124,6 +1225,9 @@
 				04360F1A1E8CBBAF00C40166 /* NSObject+JMProperty.m in Sources */,
 				04360F051E8CBA1900C40166 /* UIButton+WebCache.m in Sources */,
 				04360F1D1E8CBBD700C40166 /* JMSegmentBar.m in Sources */,
+				040C19541E9C79D10040957D /* OPColorPickerView.m in Sources */,
+				040C19431E9C79BE0040957D /* JMSignView.m in Sources */,
+				040C19551E9C79D10040957D /* OPColorSwatchView.m in Sources */,
 				04360F131E8CBB9200C40166 /* ClassCollectionViewFlowLayout.m in Sources */,
 				04360F171E8CBBA000C40166 /* ClassModel.m in Sources */,
 				04360E3B1E8CB1D000C40166 /* AFHTTPSessionManager.m in Sources */,
@@ -1139,6 +1243,7 @@
 				04360E511E8CB1D000C40166 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				04360E591E8CB1D000C40166 /* OPVideoVC.m in Sources */,
 				04360DE61E8CB1C600C40166 /* Polyline.swift in Sources */,
+				04D753BE1E9B3A8200DA8685 /* JMTextView.m in Sources */,
 				04360E421E8CB1D000C40166 /* OPAVPlayer.m in Sources */,
 				0425D1F21E5FD74900F759B7 /* main.m in Sources */,
 				04360DF01E8CB1C600C40166 /* PageViewController.swift in Sources */,
@@ -1147,11 +1252,13 @@
 				04360DEA1E8CB1C600C40166 /* StextExt.swift in Sources */,
 				04360F0B1E8CBA1900C40166 /* UIView+WebCacheOperation.m in Sources */,
 				04360F071E8CBA1900C40166 /* UIImage+MultiFormat.m in Sources */,
+				040C19531E9C79D10040957D /* OPBrightDarkGradView.m in Sources */,
 				04360DAD1E8CB1BD00C40166 /* UIImage+JMImage.m in Sources */,
 				04360F091E8CBA1900C40166 /* UIImageView+HighlightedWebCache.m in Sources */,
 				04360EFC1E8CBA1900C40166 /* MKAnnotationView+WebCache.m in Sources */,
 				04360E4C1E8CB1D000C40166 /* MASConstraintMaker.m in Sources */,
 				04360E5A1E8CB1D000C40166 /* Slider.m in Sources */,
+				04D753C11E9B40B000DA8685 /* JMTextNoteView.m in Sources */,
 				04360EFE1E8CBA1900C40166 /* SDImageCache.m in Sources */,
 				04360ED91E8CB9FB00C40166 /* UserDefaultTools.m in Sources */,
 				04360E3C1E8CB1D000C40166 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1189,6 +1296,7 @@
 				04B6C4441E8E11160073C215 /* JMSearchModel.m in Sources */,
 				04360E4D1E8CB1D000C40166 /* MASLayoutConstraint.m in Sources */,
 				04360E411E8CB1D000C40166 /* OPAudioMangerTool.m in Sources */,
+				040C19421E9C79BE0040957D /* EmojiCollectionView.m in Sources */,
 				04360DE01E8CB1C600C40166 /* Icon.swift in Sources */,
 				04B6C3FF1E8CC39C0073C215 /* JMGridController.m in Sources */,
 				04B6C4071E8CCFE90073C215 /* JMBottomView.m in Sources */,

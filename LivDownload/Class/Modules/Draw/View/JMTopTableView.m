@@ -13,6 +13,7 @@
 #import "JMTopBarModel.h"
 #import "JMBottomModel.h"
 #import "JMGestureButton.h"
+// #import "JMLineWidthCell.h"
 
 #define JMColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define JMRandomColor JMColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
@@ -84,15 +85,17 @@
 - (JMBottomCell *)tableView:(JMBottomView *)tableView index:(NSInteger)index
 {
     JMBottomModel *bModel = [self.dataSource[self.section] models][index];
+    
     JMBottomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"bottom"];
     if (!cell) {cell = [[JMBottomCell alloc] init];}
-    
     cell.isCellSelect = bModel.isSelect;
     cell.cellImage = bModel.image;
     cell.cellTitle = bModel.title;
     cell.cellTintColor = JMColor(90, 200, 93);
-    
+    cell.backgroundColor = bModel.color;
     return cell;
+    
+    return nil;
 }
 
 #pragma mark -- TopBarDelegate

@@ -12,4 +12,5 @@
 @property (nonatomic, copy) NSString *image;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, assign) BOOL isSelect;
+@property (nonatomic, strong) UIColor *color;
 @end
