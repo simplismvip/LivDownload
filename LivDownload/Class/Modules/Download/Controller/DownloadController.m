@@ -14,11 +14,16 @@
 #import "LivDownloadHelper.h"
 #import "LivViewController.h"
 #import "SegmentControl.h"
+#import "JMCloudShareController.h"
+
 #define JMColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
 #define downloadUrl @"http://182.254.223.23/download/records/pubXXX/"
 #define loadUrl @"http://server.pictolive.net:9000/play/list?format=json"
 #define JMSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 
 @interface DownloadController ()<UITableViewDelegate, UITableViewDataSource, DownloadCellDelegate>
 {
@@ -50,6 +55,26 @@
     // 设置tableView位置
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    UIBarButtonItem *rightItem =[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"more_32"] style:(UIBarButtonItemStyleDone) target:self action:@selector(rightItem:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+- (void)rightItem:(UIBarButtonItem *)item
+{
+    UIAlertController *_alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:(UIAlertControllerStyleActionSheet)];
+    
+    // 云中心
+    [_alertController addAction:[UIAlertAction actionWithTitle:@"云共享" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction *action) {
+        
+        JMCloudShareController *cloundVC = [[JMCloudShareController alloc] init];
+        cloundVC.urlString = @"http://www.pictoshare.net/index.php?controller=ucenter&action=share";
+        [self.tabBarController.navigationController pushViewController:cloundVC animated:YES];
+        
+    }]];
+    
+    [_alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:(UIAlertActionStyleDefault) handler:nil]];
+    [self presentViewController:_alertController animated:YES completion:nil];
 }
 
 #pragma mark -- UITableViewDelegate, UITableViewDataSource,

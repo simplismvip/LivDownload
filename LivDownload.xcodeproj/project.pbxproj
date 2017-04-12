@@ -20,6 +20,12 @@
 		040C195A1E9C79D10040957D /* sliderPageControlBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C19511E9C79D10040957D /* sliderPageControlBg.png */; };
 		040C195B1E9C79D10040957D /* sliderPageControlBgRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C19521E9C79D10040957D /* sliderPageControlBgRed.png */; };
 		040C195E1E9C80390040957D /* JMLineWidthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C195D1E9C80390040957D /* JMLineWidthCell.m */; };
+		040C196D1E9DD80D0040957D /* NSTimer+JMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C196C1E9DD80D0040957D /* NSTimer+JMAddition.m */; };
+		040C19721E9DD8190040957D /* JMCloudShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C196F1E9DD8190040957D /* JMCloudShareController.m */; };
+		040C19731E9DD8190040957D /* JMWebProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C19711E9DD8190040957D /* JMWebProgressView.m */; };
+		040C19761E9DD8770040957D /* JMBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C19751E9DD8770040957D /* JMBaseWebViewController.m */; };
+		040C19791E9DDE770040957D /* JMLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C19781E9DDE770040957D /* JMLoginController.m */; };
+		040C197C1E9DE2F00040957D /* JMDownLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C197B1E9DE2F00040957D /* JMDownLoadController.m */; };
 		0425D1F21E5FD74900F759B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D1F11E5FD74900F759B7 /* main.m */; };
 		0425D1F51E5FD74900F759B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0425D1F41E5FD74900F759B7 /* AppDelegate.m */; };
 		0425D1FB1E5FD74900F759B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0425D1F91E5FD74900F759B7 /* Main.storyboard */; };
@@ -177,6 +183,18 @@
 		040C19521E9C79D10040957D /* sliderPageControlBgRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderPageControlBgRed.png; sourceTree = "<group>"; };
 		040C195C1E9C80390040957D /* JMLineWidthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLineWidthCell.h; sourceTree = "<group>"; };
 		040C195D1E9C80390040957D /* JMLineWidthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLineWidthCell.m; sourceTree = "<group>"; };
+		040C196B1E9DD80D0040957D /* NSTimer+JMAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+JMAddition.h"; sourceTree = "<group>"; };
+		040C196C1E9DD80D0040957D /* NSTimer+JMAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+JMAddition.m"; sourceTree = "<group>"; };
+		040C196E1E9DD8190040957D /* JMCloudShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMCloudShareController.h; sourceTree = "<group>"; };
+		040C196F1E9DD8190040957D /* JMCloudShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMCloudShareController.m; sourceTree = "<group>"; };
+		040C19701E9DD8190040957D /* JMWebProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMWebProgressView.h; sourceTree = "<group>"; };
+		040C19711E9DD8190040957D /* JMWebProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMWebProgressView.m; sourceTree = "<group>"; };
+		040C19741E9DD8770040957D /* JMBaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBaseWebViewController.h; sourceTree = "<group>"; };
+		040C19751E9DD8770040957D /* JMBaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBaseWebViewController.m; sourceTree = "<group>"; };
+		040C19771E9DDE770040957D /* JMLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLoginController.h; sourceTree = "<group>"; };
+		040C19781E9DDE770040957D /* JMLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLoginController.m; sourceTree = "<group>"; };
+		040C197A1E9DE2F00040957D /* JMDownLoadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDownLoadController.h; sourceTree = "<group>"; };
+		040C197B1E9DE2F00040957D /* JMDownLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDownLoadController.m; sourceTree = "<group>"; };
 		0425D1ED1E5FD74900F759B7 /* LivDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0425D1F11E5FD74900F759B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0425D1F31E5FD74900F759B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -465,6 +483,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		040C196A1E9DD7970040957D /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				040C19741E9DD8770040957D /* JMBaseWebViewController.h */,
+				040C19751E9DD8770040957D /* JMBaseWebViewController.m */,
+				040C196E1E9DD8190040957D /* JMCloudShareController.h */,
+				040C196F1E9DD8190040957D /* JMCloudShareController.m */,
+				040C197A1E9DE2F00040957D /* JMDownLoadController.h */,
+				040C197B1E9DE2F00040957D /* JMDownLoadController.m */,
+				040C19771E9DDE770040957D /* JMLoginController.h */,
+				040C19781E9DDE770040957D /* JMLoginController.m */,
+				040C19701E9DD8190040957D /* JMWebProgressView.h */,
+				040C19711E9DD8190040957D /* JMWebProgressView.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		0425D1E41E5FD74900F759B7 = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +567,8 @@
 		04360DA31E8CB1BD00C40166 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				040C196B1E9DD80D0040957D /* NSTimer+JMAddition.h */,
+				040C196C1E9DD80D0040957D /* NSTimer+JMAddition.m */,
 				04360F181E8CBBAF00C40166 /* NSObject+JMProperty.h */,
 				04360F191E8CBBAF00C40166 /* NSObject+JMProperty.m */,
 				04360ECE1E8CB9DF00C40166 /* UINavigationBar+JMNavigationBar.h */,
@@ -782,6 +819,7 @@
 		04360E6B1E8CB4D400C40166 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				040C196A1E9DD7970040957D /* WebView */,
 				04360E9B1E8CB4D400C40166 /* Main */,
 				04360E971E8CB4D400C40166 /* Home */,
 				04360E7C1E8CB4D400C40166 /* Draw */,
@@ -1198,6 +1236,8 @@
 				0430E7971E8F442100FE24F2 /* JMSearchHistoryCell.m in Sources */,
 				040C19441E9C79BE0040957D /* JMWriteView.m in Sources */,
 				04360DEC1E8CB1C600C40166 /* LivePlaybackDelegate.swift in Sources */,
+				040C19761E9DD8770040957D /* JMBaseWebViewController.m in Sources */,
+				040C197C1E9DE2F00040957D /* JMDownLoadController.m in Sources */,
 				04360ED81E8CB9FB00C40166 /* JMGestureButton.m in Sources */,
 				04360EC31E8CB4D400C40166 /* MineViewController.m in Sources */,
 				04360E671E8CB1D800C40166 /* UIUtils.swift in Sources */,
@@ -1231,6 +1271,8 @@
 				04360F131E8CBB9200C40166 /* ClassCollectionViewFlowLayout.m in Sources */,
 				04360F171E8CBBA000C40166 /* ClassModel.m in Sources */,
 				04360E3B1E8CB1D000C40166 /* AFHTTPSessionManager.m in Sources */,
+				040C196D1E9DD80D0040957D /* NSTimer+JMAddition.m in Sources */,
+				040C19791E9DDE770040957D /* JMLoginController.m in Sources */,
 				04360E431E8CB1D000C40166 /* Decoder.swift in Sources */,
 				04360F061E8CBA1900C40166 /* UIImage+GIF.m in Sources */,
 				04360E531E8CB1D000C40166 /* ViewController+MASAdditions.m in Sources */,
@@ -1241,6 +1283,7 @@
 				04360EAE1E8CB4D400C40166 /* DownloadController.m in Sources */,
 				04360DEB1E8CB1C600C40166 /* Text.swift in Sources */,
 				04360E511E8CB1D000C40166 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				040C19731E9DD8190040957D /* JMWebProgressView.m in Sources */,
 				04360E591E8CB1D000C40166 /* OPVideoVC.m in Sources */,
 				04360DE61E8CB1C600C40166 /* Polyline.swift in Sources */,
 				04D753BE1E9B3A8200DA8685 /* JMTextView.m in Sources */,
@@ -1262,6 +1305,7 @@
 				04360EFE1E8CBA1900C40166 /* SDImageCache.m in Sources */,
 				04360ED91E8CB9FB00C40166 /* UserDefaultTools.m in Sources */,
 				04360E3C1E8CB1D000C40166 /* AFNetworkReachabilityManager.m in Sources */,
+				040C19721E9DD8190040957D /* JMCloudShareController.m in Sources */,
 				04360E661E8CB1D800C40166 /* LivDownloadHelper.m in Sources */,
 				04360DF21E8CB1C600C40166 /* WebsocketMessageUIDelegate.swift in Sources */,
 				04360E501E8CB1D000C40166 /* NSArray+MASAdditions.m in Sources */,
