@@ -2,8 +2,8 @@
 //  OPBrightDarkGradView.h
 //  ColorPicker
 //
-//  Created by Fabián Cañas
-//  Copyright 2010-2014. All rights reserved.
+//  Created by JM Zhao on 16/6/24.
+//  Copyright © 2016年 yijia. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

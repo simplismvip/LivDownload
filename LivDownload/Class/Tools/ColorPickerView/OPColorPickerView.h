@@ -2,13 +2,11 @@
 //  ColorPickerViewController.m
 //  ColorPicker
 //
-//  Created by Fabián Cañas
-//  Based on work by Gilly Dekel on 23/3/09
-//  Copyright 2010-2014. All rights reserved.
+//  Created by JM Zhao on 16/6/24.
+//  Copyright © 2016年 yijia. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -41,11 +39,16 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 返回初始化的颜色控制器
  */
-+ (instancetype)colorPickerWithColor:(UIColor *)color view:(UIView *)view delegate:(id<OPColorPickerViewDelegate>) delegate;
++ (instancetype)colorPickerWithColor:(UIColor *)color delegate:(id<OPColorPickerViewDelegate>) delegate;
+
+/**
+ *  初始化颜色控制器并且添加代理
+ *
+ *  @param color 设置默认颜色
+ */
++ (void)setDefaultColor:(UIColor *)color;
 
 @property (nonatomic, weak, nullable) id<OPColorPickerViewDelegate> delegate;
-
-+ (void)fristColor:(UIColor *)color;
 
 @end
 

@@ -2,9 +2,8 @@
 //  ColorPickerViewController.m
 //  ColorPicker
 //
-//  Created by Fabián Cañas
-//  Based on work by Gilly Dekel on 23/3/09
-//  Copyright 2010-2014. All rights reserved.
+//  Created by JM Zhao on 16/6/24.
+//  Copyright © 2016年 yijia. All rights reserved.
 //
 
 #import "OPColorPickerView.h"
@@ -67,7 +66,7 @@ static UIColor *_lastColor;
 
 @implementation OPColorPickerView
 
-+(void)fristColor:(UIColor *)color
++ (void)setDefaultColor:(UIColor *)color
 {
     _lastColor = color;
     _textWidth = 3.0;
@@ -76,7 +75,7 @@ static UIColor *_lastColor;
     _blackColor = 0.000000;
 }
 
-+ (instancetype)colorPickerWithColor:(UIColor *)color view:(UIView *)view delegate:(id<OPColorPickerViewDelegate>) delegate {
++ (instancetype)colorPickerWithColor:(UIColor *)color delegate:(id<OPColorPickerViewDelegate>) delegate {
     
     JMGestureButton *gesture = [JMGestureButton creatGestureButton];
     OPColorPickerView *picker = [[OPColorPickerView alloc] init];
@@ -138,7 +137,7 @@ static UIColor *_lastColor;
     UIButton *choose = [UIButton buttonWithType:(UIButtonTypeSystem)];
     choose.layer.cornerRadius = 5;
     choose.tintColor = [UIColor whiteColor];
-    [choose setTitle:NSLocalizedString(@"net.pictoshare.pageshare.opcolorpickerview.choose","") forState:(UIControlStateNormal)];
+    [choose setTitle:@"确定" forState:(UIControlStateNormal)];
     choose.backgroundColor = JMColor(130, 182, 227);
     [choose addTarget:self action:@selector(chooseSelectedColor) forControlEvents:(UIControlEventTouchUpInside)];
     [self addSubview:choose];
@@ -149,7 +148,7 @@ static UIColor *_lastColor;
     cancle.layer.cornerRadius = 5;
     cancle.tintColor = [UIColor whiteColor];
     cancle.backgroundColor = JMColor(130, 182, 227);
-    [cancle setTitle:NSLocalizedString(@"net.pictoshare.pageshare.document.navgationbar.button.alert.cancel", "")  forState:(UIControlStateNormal)];
+    [cancle setTitle:@"取消"  forState:(UIControlStateNormal)];
     [cancle addTarget:self action:@selector(cancelColorSelection) forControlEvents:(UIControlEventTouchUpInside)];
     [self addSubview:cancle];
     self.cancle =cancle;
@@ -202,9 +201,9 @@ static UIColor *_lastColor;
     
 #pragma amrk -- UISlider
     // 左右轨的图片
-    UIImage *stetchLeftTrack= [UIImage imageNamed:@"prgbar_unread"];
-    UIImage *stetchRightTrack = [UIImage imageNamed:@"prgbar_read"];
-    UIImage *thumbImage = [UIImage imageNamed:@"prgbar_icon_changesize"];
+    UIImage *stetchLeftTrack= [UIImage imageNamed:@"sliderPageControlBg"];
+    UIImage *stetchRightTrack = [UIImage imageNamed:@"sliderPageControlBgRed"];
+    UIImage *thumbImage = [UIImage imageNamed:@"Slider"];
     
     for (int i = 0; i < 2; i ++) {
         
@@ -292,7 +291,7 @@ static UIColor *_lastColor;
     
     self.swatch.frame = CGRectMake(CGRectGetMaxX(_cancle.frame)+edge, CGRectGetMinY(_choose.frame), CGRectGetMaxX(_hueSatImage.frame)-CGRectGetMaxX(_cancle.frame)-edge, 1.5*btnH);
     
-    self.sizeView.frame = CGRectMake(CGRectGetMaxX(_hueSatImage.frame)+20, CGRectGetMinY(_choose.frame), _width, CGRectGetMaxY(_hueSatImage.frame) - CGRectGetMinY(_choose.frame));
+    self.sizeView.frame = CGRectMake(CGRectGetMaxX(_hueSatImage.frame)+5, CGRectGetMinY(_choose.frame), _width, CGRectGetMaxY(_hueSatImage.frame) - CGRectGetMinY(_choose.frame));
 }
 
 - (void)viewWillLayoutSubviews {

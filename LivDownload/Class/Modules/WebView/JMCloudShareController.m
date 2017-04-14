@@ -23,7 +23,6 @@
 {
     NSString *requestStr = [[request.URL absoluteString] stringByRemovingPercentEncoding];
     NSLog(@"%@", requestStr);
-    
     return YES;
 }
 

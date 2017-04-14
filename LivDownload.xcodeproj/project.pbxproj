@@ -14,8 +14,6 @@
 		040C19541E9C79D10040957D /* OPColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C19491E9C79D10040957D /* OPColorPickerView.m */; };
 		040C19551E9C79D10040957D /* OPColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C194B1E9C79D10040957D /* OPColorSwatchView.m */; };
 		040C19561E9C79D10040957D /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C194D1E9C79D10040957D /* colormap.png */; };
-		040C19571E9C79D10040957D /* iOS-Color-Picker.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 040C194E1E9C79D10040957D /* iOS-Color-Picker.podspec */; };
-		040C19581E9C79D10040957D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 040C194F1E9C79D10040957D /* LICENSE */; };
 		040C19591E9C79D10040957D /* Slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C19501E9C79D10040957D /* Slider.png */; };
 		040C195A1E9C79D10040957D /* sliderPageControlBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C19511E9C79D10040957D /* sliderPageControlBg.png */; };
 		040C195B1E9C79D10040957D /* sliderPageControlBgRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 040C19521E9C79D10040957D /* sliderPageControlBgRed.png */; };
@@ -176,8 +174,6 @@
 		040C194A1E9C79D10040957D /* OPColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPColorSwatchView.h; sourceTree = "<group>"; };
 		040C194B1E9C79D10040957D /* OPColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPColorSwatchView.m; sourceTree = "<group>"; };
 		040C194D1E9C79D10040957D /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
-		040C194E1E9C79D10040957D /* iOS-Color-Picker.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iOS-Color-Picker.podspec"; sourceTree = "<group>"; };
-		040C194F1E9C79D10040957D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		040C19501E9C79D10040957D /* Slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider.png; sourceTree = "<group>"; };
 		040C19511E9C79D10040957D /* sliderPageControlBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderPageControlBg.png; sourceTree = "<group>"; };
 		040C19521E9C79D10040957D /* sliderPageControlBgRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderPageControlBgRed.png; sourceTree = "<group>"; };
@@ -474,8 +470,6 @@
 			isa = PBXGroup;
 			children = (
 				040C194D1E9C79D10040957D /* colormap.png */,
-				040C194E1E9C79D10040957D /* iOS-Color-Picker.podspec */,
-				040C194F1E9C79D10040957D /* LICENSE */,
 				040C19501E9C79D10040957D /* Slider.png */,
 				040C19511E9C79D10040957D /* sliderPageControlBg.png */,
 				040C19521E9C79D10040957D /* sliderPageControlBgRed.png */,
@@ -1187,11 +1181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				040C19591E9C79D10040957D /* Slider.png in Resources */,
-				040C19571E9C79D10040957D /* iOS-Color-Picker.podspec in Resources */,
 				040C195B1E9C79D10040957D /* sliderPageControlBgRed.png in Resources */,
 				040C19561E9C79D10040957D /* colormap.png in Resources */,
 				04360E481E8CB1D000C40166 /* Info.plist in Resources */,
-				040C19581E9C79D10040957D /* LICENSE in Resources */,
 				040C195A1E9C79D10040957D /* sliderPageControlBg.png in Resources */,
 				0425D2001E5FD74900F759B7 /* LaunchScreen.storyboard in Resources */,
 				0425D1FD1E5FD74900F759B7 /* Assets.xcassets in Resources */,
